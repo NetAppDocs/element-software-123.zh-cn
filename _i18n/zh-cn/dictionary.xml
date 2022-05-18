@@ -8963,7 +8963,6 @@
   <block id="cc7378d924a7a641ed80e623576e3981" category="section-title">VASA 提供程序</block>
   <block id="a59c51fc1ad210c1bec14d4848238667" category="paragraph">要使 vSphere 能够识别 NetApp Element 集群上的 VVOL 功能， vSphere 管理员必须向 vCenter 注册 NetApp Element VASA Provider 。VASA 提供程序是 vSphere 与 Element 集群之间的带外控制路径。它负责代表 vSphere 在 Element 集群上执行请求，例如创建 VM ，使 VM 可供 vSphere 使用以及向 vSphere 公布存储功能。</block>
   <block id="01ef303b25d3281cb33cd13014af3226" category="paragraph">VASA 提供程序在 Element 软件中作为集群主节点的一部分运行。集群主节点是一种高可用性服务，可根据需要故障转移到集群中的任何节点。如果集群主节点进行故障转移， VASA 提供程序将随之移动，以确保 VASA 提供程序的高可用性。所有配置和存储管理任务都使用 VASA 提供程序，该提供程序可处理 Element 集群上所需的任何更改。</block>
-  <block id="72da0f32a8783a5cb119cddae9f955bb" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
   <block id="583fdc81420816faa41efaba6c508421" category="inline-link-macro">NetApp 软件下载</block>
   <block id="5709d7946cfaf2f2c04b03412834dd73" category="admonition">如果您已在 vCenter 中注册 VASA Provider ，则最多可通过 VASA 升级修补程序为 10 个 vCenter 提供 VASA 支持。要安装，请按照 VASA39 清单中的说明进行操作，然后从下载 .tar.gz 文件 <block ref="4efcd63a00c3a5e6a73880f24942f8e7" category="inline-link-macro-rx"></block> 站点NetApp Element VASA 提供程序使用 NetApp 证书。使用此修补程序时， vCenter 会未经修改地使用此证书来支持多个 vCenter 以供 VASA 和 VVol 使用。请勿修改证书。VASA 不支持自定义 SSL 证书。</block>
   <block id="05aacbda5ea0269e732010572e3e0b0e" category="summary">您可以找到有关服务质量 \ （ QoS\ ）的可能最小值和最大值的信息。</block>
@@ -12343,4 +12342,5 @@
   <block id="9958041ee70a2259278a77d924dd17fb" category="sidebar">外部密钥管理 API 命令</block>
   <block id="27f2e04c96b5ac3b10c4de8069658227" category="sidebar">使用组快照进行数据保护</block>
   <block id="cf35d1bd4f63afd1c731729075f91d65" category="sidebar">将卷 ROL 回滚到组快照</block>
+  <block id="234a1430825055fe25203429facd267e" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
 </blocks>
