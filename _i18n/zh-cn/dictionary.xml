@@ -12343,5 +12343,5 @@
   <block id="cf35d1bd4f63afd1c731729075f91d65" category="sidebar">将卷 ROL 回滚到组快照</block>
   <block id="234a1430825055fe25203429facd267e" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP处理帐户</block>
-  <block id="5ad6f8e03d0f93ba44ef423507b43958" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。帐户包含访问分配给它的卷所需的 CHAP 身份验证。创建卷时、卷会分配给特定帐户。</block>
+  <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。帐户包含访问分配给它的卷所需的质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)身份验证。创建卷时、卷会分配给特定帐户。</block>
 </blocks>
