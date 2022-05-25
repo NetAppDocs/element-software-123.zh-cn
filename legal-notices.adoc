@@ -60,4 +60,7 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 * link:./media/mgmt-213.pdf["管理服务通知 2.13 （ VCP 4.5.42 ）"^]
 * link:./media/SolidFire_eSDS_12.3.pdf["NetApp SolidFire 企业 SDS 通知"^]
 * link:./media/storage_firmware_bundle_2.146_notices.pdf["存储固件包 2.146 的注意事项"^]
+* link:./media/storage_firmware_bundle_2.99_notices.pdf["存储固件包 2.99.2 注意事项"^]
+* link:./media/storage_firmware_bundle_2.76_notices.pdf["存储固件包 2.76 的注意事项"^]
+* link:./media/storage_firmware_bundle_2.27_notices.pdf["存储固件包 2.27 的注意事项"^]
 

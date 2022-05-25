@@ -12344,4 +12344,8 @@
   <block id="234a1430825055fe25203429facd267e" category="admonition">请勿将多个 NetApp Element VASA 提供程序注册到一个 vCenter 实例中。如果添加了另一个 NetApp Element VASA 提供程序，则会使所有 VVOL 数据存储库无法访问。</block>
   <block id="036988ff4fac899a45c5c90da9729599" category="doc">使用CHAP处理帐户</block>
   <block id="5f93174c2b6fa00ee106be4342b5fae5" category="paragraph">在SolidFire 存储系统中、租户可以使用帐户使客户端能够连接到集群上的卷。帐户包含访问分配给它的卷所需的质询握手身份验证协议(Challenge-Handshake Authentication Protocol、CHAP)身份验证。创建卷时、卷会分配给特定帐户。</block>
+  <block id="927feedbfb9bbc4a93e285ba9504ab0b" category="inline-link-macro">存储固件包 2.76 的注意事项</block>
+  <block id="69b7535618573fd609dc8b4663c8b8c0" category="list-text"><block ref="69b7535618573fd609dc8b4663c8b8c0" category="inline-link-macro-rx"></block></block>
+  <block id="30624e21224d847e1b829641269ffe3c" category="inline-link-macro">存储固件包 2.27 的注意事项</block>
+  <block id="656e3f29cbe522931c455a5e233d1c6f" category="list-text"><block ref="656e3f29cbe522931c455a5e233d1c6f" category="inline-link-macro-rx"></block></block>
 </blocks>
