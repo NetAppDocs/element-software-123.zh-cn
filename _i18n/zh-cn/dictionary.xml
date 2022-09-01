@@ -8477,7 +8477,6 @@
   <block id="7d640bfdd148f102df423b6e94b11571" category="paragraph"><block ref="15098cd863d8945571eb3fa1cb63a7fe" category="inline-link-rx"></block> 是一种基于 Web 的工具，可提供持续更新的集群范围数据历史视图。您可以为特定事件，阈值或指标设置警报。通过 SolidFire Active IQ ，您可以监控系统性能和容量，并随时了解集群运行状况。</block>
   <block id="841b3da78955b4e942c8bd5ffddca29e" category="paragraph">您可以在 SolidFire Active IQ 中找到有关您的系统的以下信息：</block>
   <block id="4cea75009713f3eadbea7bd906d0523e" category="list-text">节点数量和节点状态：运行状况良好，脱机或故障</block>
-  <block id="1d60ceb1c0eb7b235010f9d4f656f6d7" category="list-text">CPU 和内存使用情况的图形表示</block>
   <block id="390ad22ea22a7a4699d87e2efaa0c84e" category="list-text">有关节点的详细信息，例如序列号，机箱中的插槽位置，型号以及存储节点上运行的 NetApp Element 软件版本</block>
   <block id="09bfac84403d33379e533954403b0f94" category="list-text">有关虚拟机的 CPU 和存储相关信息</block>
   <block id="8f7f4baec8aa05a765ec83446ad7d0c6" category="inline-link">适用于 Active IQ 的 NetApp 支持站点和管理工具</block>
@@ -10154,7 +10153,6 @@
   <block id="61619933da68d936343d156cf86fd348" category="list-text">在 * 密码 * 和 * 确认密码 * 字段中输入新的强密码。</block>
   <block id="328ec503408d578ee5972945b2b06ae0" category="list-text">单击页面底部的 * 保存 * 。</block>
   <block id="c77013b15c47fcdd751ff96ca28cf5ac" category="list-text">对具有默认 IPMI 密码的任何其他 H610S 节点重复此操作步骤。</block>
-  <block id="148fe9926e292adb5c7374ee88fa6651" category="paragraph">您可以在 Active IQ 中找到有关您的系统的以下信息：</block>
   <block id="66c36c8b05fe85645ac29ef19ef65fec" category="paragraph">管理节点（ mNode ）是与一个或多个基于 Element 软件的存储集群并行运行的虚拟机。它用于升级和提供系统服务，包括监控和遥测，管理集群资产和设置，运行系统测试和实用程序，以及启用 NetApp 支持访问以进行故障排除。</block>
   <block id="27784185cf7acffff8c4030234913f4f" category="paragraph">从 Element 11.3 版开始，管理节点充当微服务主机，可以在主要版本之外更快地更新选定的软件服务。这些微服务或管理服务（例如 Active IQ 收集器，适用于 vCenter 插件的 QoSSIOC 和 mNode 服务）会作为服务包进行频繁更新。此外，还可以从管理节点获得其他服务，包括用于存储节点软件升级的 HealthTools 以及支持工具（远程支持通道）。</block>
   <block id="d27c6f768ef4d7149904862f1a633b7e" category="summary">SolidFire 存储节点是一个服务器，其中包含一组通过绑定 10G 网络接口相互通信的驱动器。节点中的驱动器包含用于数据存储和数据管理的块和元数据空间。</block>
@@ -11126,18 +11124,6 @@
   <block id="18d9baaef37c0db710997a1713f55562" category="paragraph">用户为 QoS 策略定义的名称。</block>
   <block id="ce8f7dd1608dc67c9404ff17eac605a7" category="list-text">* 卷 *</block>
   <block id="7bb6651b24ac622589ee6a2bece471c0" category="paragraph">显示使用此策略的卷数。此数字链接到已应用此策略的卷表。</block>
-  <block id="8bc14f0cb78851f59e85c1d447c2c99f" category="doc">Quality of service</block>
-  <block id="8525478e88fe768020917024e56b3375" category="list-text">* 最小 IOPS*</block>
-  <block id="27e38a475d319fbe8808dbde111a71f4" category="paragraph">存储集群为卷提供的最小可持续每秒输入输出数（ IOPS ）。为卷配置的最小 IOPS 是卷性能的保证级别。性能不会低于此级别。</block>
-  <block id="0eafe666057554f59d8d2c8c24b3e0f3" category="list-text">* 最大 IOPS*</block>
-  <block id="086078d6e9862aa3229698f9f4ea609d" category="paragraph">存储集群为卷提供的最大可持续 IOPS 。如果集群 IOPS 级别非常高，则不会超过此 IOPS 性能级别。</block>
-  <block id="6c3439000c562798f2214c4888ab4ed8" category="paragraph">在短时突发情形下允许的最大 IOPS 数。如果卷运行的 IOPS 低于最大 IOPS ，则会累积突发额度。如果性能级别变得非常高并被推送到最大级别，则允许在卷上短时突发 IOPS 。</block>
-  <block id="21094115b958d315231b910f9b8e8c38" category="paragraph">一个卷可以累积突发 IOPS ，并使用这些额度在设定的 " 突发期间 " 突发 IOPS ，使其高于其最大 IOPS ，直至达到突发 IOPS 级别。如果集群具有容纳此突发的容量，则卷的突发时间可长达 60 秒。</block>
-  <block id="1d817bd510c09dbc5ee3cf5101fa6e94" category="paragraph">卷在其最大 IOPS 限制下运行的每秒累积一秒突发额度（最多 60 秒）。</block>
-  <block id="4fb6dee19a7208b7558396de228b1c1c" category="list-text">* 有效最大带宽 *</block>
-  <block id="248da5ca182c3126378490e07f585f5c" category="paragraph">最大带宽是通过将 IOPS 数（基于 QoS 曲线）乘以 IO 大小计算得出的。</block>
-  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">示例</block>
-  <block id="4f88c9126146259f6c0627052d9cda8f" category="paragraph">100 min IOPS ， 1000 Max IOPS 和 1500 Burst IOPS 的 QoS 参数设置会对性能质量产生以下影响：</block>
   <block id="a418de238af2e950367eb7c3bf83fe1f" category="summary">通常，在使用 SnapMirror 从运行 NetApp Element 软件的 SolidFire 存储集群到 ONTAP 软件进行灾难恢复时， Element 是源，而 ONTAP 是目标。但是，在某些情况下， ONTAP 存储系统可以用作源，而 Element 可以用作目标。</block>
   <block id="659c8d4c2c0fc3a73a824fc81bde1e80" category="doc">执行从 ONTAP 到 Element 的传输或一次性迁移</block>
   <block id="a955789d7e958f413c05678ed87e5055" category="list-text">存在两种情形：</block>
@@ -12087,9 +12073,6 @@
   <block id="17d44e89eecd428fa4268b3fa3873164" category="paragraph">最好不要混用非加密节点和加密节点。在混合节点集群中，任何节点都不能超过集群总容量的 33% 。例如，在具有四个 SF 系列 4805 节点的集群中，可以单独添加的最大节点是 SF 系列 9605 。在这种情况下，集群容量阈值是根据最大节点的潜在损失计算的。</block>
   <block id="dde5a199f31b4af53ccd088330e8314c" category="paragraph">从 Element 12.0 开始，不支持以下 SF 系列存储节点：</block>
   <block id="58432e4b26f0e5c8db86828d17f3a7ba" category="paragraph">如果将其中一个存储节点升级到 Element 12.0 ，则会看到一条错误，指出 Element 12.0 不支持此节点。</block>
-  <block id="05da295a52c5ab8bf219722efcc57625" category="summary">服务质量 \ （ QoS\ ）性能曲线显示了块大小与 IOPS 百分比之间的关系。</block>
-  <block id="735a31f1d01fe768279621625e725b79" category="doc">QoS 性能曲线</block>
-  <block id="18a66bc3ec4b3669a530ba3c51d026aa" category="paragraph">服务质量（ QoS ）性能曲线显示了块大小与 IOPS 百分比之间的关系。</block>
   <block id="4cf5f18e32ae2a3ab791ffc90b0c71b8" category="summary">您必须监控系统以进行诊断，并获取有关各种系统操作的性能趋势和状态的信息。出于维护目的，您可能需要更换节点或 SSD 。</block>
   <block id="5d275af03802c344792a6765e974ac03" category="list-text"><block ref="5d275af03802c344792a6765e974ac03" category="inline-link-macro-rx"></block></block>
   <block id="b1c9ca707156f02819d3d0e1cc8278ee" category="list-text"><block ref="b1c9ca707156f02819d3d0e1cc8278ee" category="inline-link-macro-rx"></block></block>
@@ -12330,9 +12313,10 @@
   <block id="0ba7ef8feca0e0b45134473e9c3182d4" category="paragraph">查看｛url-peak｝[适用于vCenter Server的Element插件知识库文章^。</block>
   <block id="ef9cbe434b5f28c847ba96be9c26f253" category="list-text">以图形方式表示CPU、内存使用情况和节点限制</block>
   <block id="7aa85da92a1cd23b2981568643e3da1c" category="inline-link">SolidFire Active IQ 文档</block>
-  <block id="24cc9a6d809fb5ff41b6660db9cdf022" category="list-text">有关虚拟机的CPU和存储相关信息要了解SolidFire Active IQ 、请参见<block ref="3422f40bd7bba6370d69142070e812b4" category="inline-link-rx"></block>。</block>
   <block id="1a1a6c5ed33ecaf055e3e38150525306" category="list-text"><block ref="11e28499cd7c9c7d408304fbab2a1320" category="inline-link-rx"></block></block>
   <block id="469eaba8a7048afa0ba6f8eb91801de9" category="doc">使用SolidFire Active IQ 监控存储</block>
   <block id="45f40a7365f71f3eafc4489e01e9aa82" category="sidebar">使用NetApp SolidFire Active IQ 监控存储</block>
   <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ</block>
+  <block id="f02632134f46548247abd92a38e5f73e" category="paragraph">要了解SolidFire Active IQ 、请参见<block ref="3422f40bd7bba6370d69142070e812b4" category="inline-link-rx"></block>。</block>
+  <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：</block>
 </blocks>

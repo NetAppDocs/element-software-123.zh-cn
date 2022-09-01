@@ -9,8 +9,10 @@ https://activeiq.solidfire.com["SolidFire Active IQ"^] 是一种基于 Web 的�
 * 节点数量和节点状态：运行状况良好，脱机或故障
 * 以图形方式表示CPU、内存使用情况和节点限制
 * 有关节点的详细信息，例如序列号，机箱中的插槽位置，型号以及存储节点上运行的 NetApp Element 软件版本
-* 有关虚拟机的CPU和存储相关信息要了解SolidFire Active IQ 、请参见 https://docs.netapp.com/us-en/solidfire-active-iq/index.html["SolidFire Active IQ 文档"^]。
+* 有关虚拟机的 CPU 和存储相关信息
 
+
+要了解SolidFire Active IQ 、请参见 https://docs.netapp.com/us-en/solidfire-active-iq/index.html["SolidFire Active IQ 文档"^]。
 
 
 

@@ -19,8 +19,12 @@ keywords: netapp, Element, api, enable, active iq, activeiq
 Active IQ 收集器服务会将配置数据和基于 Element 软件的集群性能指标转发到 SolidFire Active IQ ，以便进行历史报告和近乎实时的性能监控。通过 NetApp 监控服务，可以将存储集群故障转发到 vCenter 以发送警报通知。
 
 .开始之前
-* 您的存储集群运行的是 NetApp Element 软件 11.3 或更高版本。
-* 您已部署运行 11.3 或更高版本的管理节点。
+* Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：
++
+** 您的存储集群运行的是 NetApp Element 软件 11.3 或更高版本。
+** 您已部署运行 11.3 或更高版本的管理节点。
+
+
 * 您可以访问 Internet 。不能从没有外部连接的非公开站点使用 Active IQ 收集器服务。
 
 
