@@ -8867,7 +8867,6 @@
   <block id="4902bbb0f0792204a931cd6714a07488" category="section-title">权威存储集群</block>
   <block id="a18ea3a466ff3d7bd70cfb3f7158e88d" category="paragraph">权威存储集群是 NetApp Hybrid Cloud Control 用于对用户进行身份验证的存储集群。</block>
   <block id="2cd0e9f52d18ccaa56ebdcbb4861e9b3" category="paragraph">如果您的管理节点只有一个存储集群，则它是权威集群。如果您的管理节点有两个或更多存储集群，其中一个集群将被分配为权威集群，只有该集群中的用户才能登录到 NetApp Hybrid Cloud Control 。要了解哪个集群是权威集群，您可以使用 `get /mnode/about` API 。在响应中， `token_url` 字段中的 IP 地址是权威存储集群的管理虚拟 IP 地址（ MVIP ）。如果您尝试以非权威集群上的用户身份登录到 NetApp Hybrid Cloud Control ，则登录尝试将失败。</block>
-  <block id="231614b040b1229fa532738569668845" category="paragraph">许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。在继续管理多个存储集群之前，您应确保在权威集群上定义的用户已在具有相同权限的所有其他存储集群上定义。</block>
   <block id="7637537a215094d11d21f8d200622812" category="inline-link-macro">Element 软件用户界面</block>
   <block id="353681e44a9f1004360ad2451b95f66a" category="paragraph">在继续管理多个存储集群之前，您应确保在权威集群上定义的用户已在具有相同权限的所有其他存储集群上定义。您可以从管理用户 <block ref="c6f9d44a89e7c75fd4726f61bea07a82" category="inline-link-macro-rx"></block>。</block>
   <block id="68f491affafdc67007d139c6e24190b1" category="inline-link-macro">创建和管理存储集群资产</block>
@@ -12201,7 +12200,6 @@
   <block id="e506ffc283cd9b97f54dc128678dfcbc" category="paragraph"><block ref="e506ffc283cd9b97f54dc128678dfcbc" category="inline-xref-macro-rx"></block></block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
-  <block id="c653b8edc861abcc06840aebde786e4b" category="sidebar">使用适用于 vCenter Server 的 Element 插件管理存储（链接）</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">早期版本</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
   <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">安装维护硬件</block>
@@ -12319,4 +12317,10 @@
   <block id="d8d2cf4b5fd1196b5be39dd3b93ba995" category="sidebar">使用NetApp SolidFire Active IQ</block>
   <block id="f02632134f46548247abd92a38e5f73e" category="paragraph">要了解SolidFire Active IQ 、请参见<block ref="3422f40bd7bba6370d69142070e812b4" category="inline-link-rx"></block>。</block>
   <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：</block>
+  <block id="d214b4cd328cf59221f38d85dca1988f" category="summary">使用适用于vCenter Server的NetApp Element 插件(VMware vSphere界面的插件)管理和监控运行NetApp Element 软件的存储集群。</block>
+  <block id="14dc26d359d13f6037d00a6c79232cd6" category="paragraph">适用于vCenter Server的NetApp Element 插件为VMware vSphere界面提供了一个插件、可用于管理和监控运行NetApp Element 软件的存储集群。</block>
+  <block id="da3eb0bd8c882a21931739ac39ce915a" category="inline-link">适用于 vCenter Server 的 NetApp Element 插件文档</block>
+  <block id="c557278939ddfc5c37a8606a5b8bc3d8" category="paragraph">要了解适用于vCenter Server的Element插件、请参见<block ref="4a40fe421733073daff96e428d226590" category="inline-link-rx"></block>。</block>
+  <block id="fd0b9b1500c5983ac27a332210ebfe29" category="paragraph">许多 NetApp Hybrid Cloud Control 功能都设计用于多个存储集群，但身份验证和授权存在限制。身份验证和授权的限制是，权威集群中的用户可以对与 NetApp Hybrid Cloud Control 关联的其他集群执行操作，即使他们不是其他存储集群上的用户也是如此。</block>
+  <block id="f0e8a2f025f562374fa58233f9f7cd01" category="sidebar">使用适用于vCenter Server的Element插件管理存储</block>
 </blocks>
