@@ -22,7 +22,7 @@ keywords: netapp, element, management node, management services, mnode, logs
 
 
 .步骤
-. 在管理节点上打开 REST API UI ：
+. 在管理节点上打开REST API UI。
 +
 [listing]
 ----
