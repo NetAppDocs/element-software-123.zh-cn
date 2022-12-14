@@ -164,7 +164,7 @@ image::../media/esds_installation_workflow.png[显示了安装工作流。]
 
 
 
-== 动态节点评级（ Element 12.3.1 中的新增功能！）
+== 动态节点评级(元素12.3.1中的_new！_)
 
 动态节点评级是 Element 12.3.1 中的一项新功能，与当今每个平台使用一个 CPU 的模式不同，它使您可以为每个 ESDS 平台使用 24 个受支持的 CPU 。
 

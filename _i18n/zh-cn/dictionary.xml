@@ -28,7 +28,6 @@
   <block id="067dc4be0fd4af30d6f12cb91408d3a6" category="doc">创建和管理启动程序</block>
   <block id="5b3c47ab9efcbf97735f905da74faedd" category="inline-link-macro">启动程序</block>
   <block id="7e974a884a831b57d3770c920d7e0bce" category="paragraph">您可以使用 <block ref="e387c80499cf4abbdb7201d3a78b27d4" category="inline-link-macro-rx"></block> 用于基于 CHAP 而不是基于帐户访问卷。您可以创建和删除启动程序，并为其提供友好的别名，以简化管理和卷访问。将启动程序添加到卷访问组时，该启动程序将允许访问组中的所有卷。</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要什么？ #8217 ；将需要什么</block>
   <block id="23d954acc193cc9d7d1ca46f3b04fdbe" category="list-text">您拥有集群管理员凭据。</block>
   <block id="3e05afda286ee2429e397b068c797489" category="list-text">您已将管理服务至少升级到版本 2.17 。NetApp Hybrid Cloud Control 启动程序管理在早期的服务包版本中不可用。</block>
   <block id="dae8ace18bdcbcc6ae5aece263e14fe8" category="list-title">选项</block>
@@ -2220,17 +2219,14 @@
   <block id="068817eddb6802e1d3071e7fe885650f" category="paragraph">您可以使用 Ansible 等自动化工具安装 SolidFire ESDS 。</block>
   <block id="b97b11d80b0bcf547bcc133c20febcae" category="paragraph">下面是使用 Ansible 进行安装的简要概述：</block>
   <block id="f87aae9cb20ea2d100efbe63ba40cfdd" category="image-alt">显示了安装工作流。</block>
-  <block id="20015149e57b9ea92f4b5090ff7f53b2" category="section-title">动态节点评级（ Element 12.3.1 中的新增功能！）</block>
   <block id="72d9c53a65fad048ea88d9b8be004d24" category="paragraph">动态节点评级是 Element 12.3.1 中的一项新功能，与当今每个平台使用一个 CPU 的模式不同，它使您可以为每个 ESDS 平台使用 24 个受支持的 CPU 。</block>
   <block id="97536cbfae1b231373bcd97b10deb15c" category="paragraph">目前在 ESDS 上支持的所有平台均支持动态节点评级： DL360 ， DL380 和 R640 。</block>
   <block id="24bc1a938f18ccc15e42f585341c44d5" category="paragraph">对于第一版动态节点评级，任何节点的最大 IOPS 评级均为 10 万次 IOPS 。</block>
   <block id="8a221a4f965f4cfc6edfd1e855cb0aaa" category="summary">在安装 SolidFire ESDS 之前，请确保执行必要的检查并验证您的环境是否满足配置， IP 地址和网络连接要求。</block>
   <block id="88d5e6f116564d2c06f8abf0724efec5" category="doc">执行安装的前提条件任务</block>
-  <block id="f7dcb8224f85128ec87fe0a2442fc52a" category="list-title">&lt;Strong&gt; 安装所需硬件 &lt;/Strong&gt;</block>
   <block id="72af4b89bf6c89e877a119046199a6b7" category="inline-link">NetApp 互操作性表（需要登录）</block>
   <block id="04be9ab6e44a60450ae6452e609984be" category="list-text">安装支持的服务器。请参见<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block> 有关详细信息 ...</block>
   <block id="fa5b69222b994a8a596eef2320a99a75" category="list-text">确保硬件配置是平衡的，并且所有通道均已填充。有关最大程度地提高带宽的详细信息，请参见<block ref="404eae9bc7c2264c66c1f2a9c06f066b" category="inline-link-rx"></block> （需要登录）。</block>
-  <block id="2a97471ec199242556431779bd30838a" category="list-title">&lt;Strong&gt; 配置主机（节点） &lt;/Strong&gt;</block>
   <block id="dfda84dd73a63b7698fcd71a1a191bb4" category="list-text">根据中列出的受支持版本安装 RHEL<block ref="36e2db57610e5e592eafeefc265a5341" category="inline-link-rx"></block>。</block>
   <block id="6fa70406f47786b02c8769bd1b178120" category="list-text">配置网络时间协议（ NTP ）服务器，以便与网络中的所有主机结合使用。</block>
   <block id="0ce895e38ab4717417ddcc44e6cf4e1c" category="list-text">选择安装目标时，选择单选按钮以手动配置文件系统分区。在 * 手动分区 * 页面上，使用 * + * 和 * - * 按钮删除任何现有分区，并根据此处列出的建议创建新分区并调整其大小。使用默认 LVM 分区方案，您可以在以后根据需要轻松调整大小。</block>
@@ -2258,10 +2254,8 @@
   <block id="68c4b5c87d48a6c6ca4cc14cfacaab03" category="list-text">在节点上启用 SSH 。</block>
   <block id="f0a2de2efe6108942f8b79e50b1b6be5" category="inline-link">知识库文章（需要登录）</block>
   <block id="57208611101414fe2f0426e46c1f0d65" category="list-text">如果要禁用 IPv6 ，请按照本节中详细介绍的步骤进行操作<block ref="2a5c78b7a0390cd7a5313c37d3eb2c52" category="inline-link-rx"></block>。</block>
-  <block id="1a76b48d9d60fd8364da6ea0eaec3eff" category="list-title">&lt;Strong&gt; 安装所需软件 &lt;/Strong&gt;</block>
   <block id="654fdbae1d58bcbbc420ee34e66cbecb" category="list-text">安装 Ansible ， Git ， Podman 和 Python 3.0 。</block>
   <block id="7d0538a19432cbf213b589c89bb6b819" category="admonition">对于 Element 12.3 ，支持的 Podman 版本为 1.0.4 。</block>
-  <block id="e1633c03fa0d88ea4ec55f043ee4598c" category="list-title">&lt;Strong&gt; 验证您的配置是否符合 NetApp&amp;#8217 安装 SolidFire ESDS&lt;/Strong&gt; 的要求</block>
   <block id="30ec57363b9938495c0097cd8a0bcbbf" category="list-text">使用中列出的 SolidFire ESDS 配置<block ref="d73544449e4c516eccc06a758c5e6c47" category="inline-link-rx"></block> 作为参考。</block>
   <block id="909806d31a8e12a761cf09c409cefaad" category="admonition">如果您就与 SolidFire ESDS 相关的问题联系 NetApp 支持部门寻求帮助，支持部门将首先验证您的平台是否符合 IMT 中列出的 SolidFire ESDS 的参考配置。如果支持部门确定您的底层平台不符合参考配置，支持部门将指导您将不合规的固件，软件和 / 或硬件组件与 IMT 中的正确版本对齐。</block>
   <block id="6314b9fb7626759e31aeab5d959e5286" category="list-text">对 SolidFire ESDS 运行合规性检查。</block>
@@ -2270,7 +2264,6 @@
   <block id="34838a3f0559a6f772b5758da69cbbfb" category="list-text">创建用于合规性检查的攻略手册。</block>
   <block id="e7b21406c191f4c1bb269d3ffee0368d" category="list-text">运行合规性检查攻略手册，如以下示例所示：</block>
   <block id="37ea6b2cb8a75db09428d93d9a0416d0" category="admonition">即使您开始使用 SolidFire ESDS 系统，也应定期运行合规性检查，以确保您的系统符合要求。在某些情况下， NetApp 支持部门会要求您运行合规性检查，以帮助诊断和解决问题。</block>
-  <block id="09acbcc09d76195cfde55a1522db4644" category="list-title">&lt;Strong&gt; 了解网络和 IP 地址要求 &lt;/Strong&gt;</block>
   <block id="c8bd9bfc4e58f0125e3130b5e3b58307" category="inline-link">Red Hat 文档</block>
   <block id="36a4a4fa850be7aa4008ba57334d681b" category="list-text">熟悉如何在 RHEL 中配置和管理网络和网络接口。请参见<block ref="a5d07f73933f9c55909e31f1ce2ee464" category="inline-link-rx"></block>。</block>
   <block id="1c39f346a9b7cd529f0e7deeee5ce177" category="list-text">按照此处详细介绍的 IP 要求配置网络：</block>
@@ -2294,7 +2287,6 @@
   <block id="3954d0109fc9c791be6d11e39804cb50" category="paragraph">用于管理网络的端口</block>
   <block id="ebff118a006e94651da911d800279c44" category="admonition">此处提供的图示仅用作示例。实际硬件可能因服务器而异。</block>
   <block id="7300079506cb737ad309140b1f56eeda" category="list-text">将交换机端口 MTU 更改为 9216 字节。</block>
-  <block id="4b7ef9f74fc5d5abcae07ceee277787a" category="list-title">&lt;Strong&gt; 允许特定端口通过数据中心？ #8217 ； s 防火墙 &lt;/Strong&gt;</block>
   <block id="2c87e2d0f38577f9f5bdce1dc171ae67" category="list-text">如果在运行 RHEL 的存储节点上启用了 `firewalld` ，请确保打开以下端口，以便可以远程管理系统，允许数据中心外部的客户端连接到资源，并确保内部服务可以正常运行：</block>
   <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">源</block>
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目标</block>
@@ -2335,11 +2327,9 @@
   <block id="f0f166a01d55488cbf1ae223ecbb6068" category="paragraph">vCenter 插件 QoSSIOC 服务</block>
   <block id="b843120f7921517683f4de0687bf0a29" category="admonition">Element 分布式数据库需要使用端口 2181 ， 2182 和 2183 ，并且在安装 SolidFire ESDS 时，将从 Element 容器动态打开端口 2181 ， 2182 和 2183 。</block>
   <block id="0cb585626379a70b87a0e3ee14309e3b" category="list-text">使用以下命令打开上述端口：</block>
-  <block id="95f75258f8b33664eeaf8b541ff97858" category="list-title">&lt;Strong&gt; 配置主机网络 &lt;/Strong&gt;</block>
   <block id="78ff65afbf92a15cd30dea91aefc1e9b" category="inline-link-macro">最佳实践</block>
   <block id="f433801b7b771eb645906990697cb40d" category="list-text">使用配置主机网络 <block ref="d5d50f06af9eb06fd5c8afba97ab5274" category="inline-link-macro-rx"></block> 已提供。</block>
   <block id="9fe0e0876a07d2247ecb84a994e87a77" category="admonition">您应完成配置主机网络的步骤，以确保成功安装 SolidFire ESDS 。</block>
-  <block id="fb96b65afb5d2a139a12f87e3171372c" category="list-title">&lt;Strong&gt; 完成其他要求 &lt;/Strong&gt;</block>
   <block id="d5272d5ecd1fe99c7097dfcca90c8f7d" category="list-text">安装一个 Collect ， NetApp 支持部门将使用它收集主机日志。您可以从安装一个 Collect<block ref="d3b16539387c5c512d10064586f79c65" category="inline-link-rx"></block>。要访问下载内容，您需要一个 NetApp 帐户。您还可以在同一位置找到《 One Collect 安装指南》和《发行说明》。</block>
   <block id="b4cac9f0dca24135289e8ff89afe6aa1" category="admonition">要获得最佳支持体验，您必须下载并安装一个 Collect 。</block>
   <block id="6d1d7be211708c9b56d930f731aa306b" category="list-text">安装用于收集日志的管理节点，并启用 NetApp 支持访问以进行故障排除。有关管理节点和安装步骤的信息，请参见 <block ref="9915e3fe57455c0bc98ba7d4ab2016f9" category="inline-link-macro-rx"></block>。</block>
@@ -8218,7 +8208,6 @@
   <block id="ee04baa2ee228c73a80bcb76420c3f83" category="admonition">要检查版本，请登录到管理节点并在登录横幅中查看 Element 版本号。如果您没有 11.3 ，请参见 <block ref="298642ffea6db0968793883313b436ff" category="inline-link-macro-rx"></block>。</block>
   <block id="df3748edc080e7a8ed49863460584cdd" category="paragraph">早期版本的服务包不支持使用 NetApp Hybrid Cloud Control 进行升级。</block>
   <block id="ced99676ffdce11db0cf7ce2a4a812b8" category="list-text">您已确保所有节点上的系统时间均已同步，并且已为存储集群和节点正确配置 NTP 。必须在每个节点 Web UI （`https://[IP address] ： 442` ）中为每个节点配置一个 DNS 命名服务器，并且不会出现与时间偏差相关的未解决集群故障。</block>
-  <block id="6ea7f8d4483b20144d2c82f1ed99c07a" category="section-title">系统升级顺序</block>
   <block id="2ddcbbcdd4f972f2c02a9a2fe92ff535" category="paragraph">您可以按以下顺序升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统</block>
   <block id="524813e84d210a04a3c005022becca08" category="inline-link-macro">从 Hybrid Cloud Control 更新管理服务</block>
   <block id="c43409e402c491faff614694ff49b45b" category="list-text"><block ref="d96c5e393dc7f7cfcba5644a67a6ff8a" category="inline-link-macro-rx"></block>。</block>
@@ -12352,4 +12341,26 @@
   <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">(对于内部服务器/非公开站点)根据适用于vCenter的Element插件版本、此插件JSON文件或插件ZIP的自定义URL：</block>
   <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">从适用于vCenter Server 5.0的Element插件开始、将显示NetApp Element 远程插件扩展点：</block>
   <block id="1c63b3cd9a6d3bdf8b9b31aca68672d7" category="list-text">对于适用于vCenter Server 4.10或更早版本的Element插件、将显示NetApp Element 配置和管理扩展点：</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的内容</block>
+  <block id="f8317d9a65a7e996db437d8eabc22aeb" category="paragraph-title">故障排除知识库文章链接</block>
+  <block id="50f33d14f129e4548c1c270fd6725a78" category="paragraph-title">配置选项</block>
+  <block id="6a31058d1e6208d43e0d620fb4953c23" category="paragraph-title">存储集群资产管理选项</block>
+  <block id="891a52ee80600fd58bac60927df7a3a9" category="section-title">【启用主模式】启用维护模式</block>
+  <block id="27404255e546058b4a4837fb07e90bbf" category="section-title">【disable_main_mode]]禁用维护模式</block>
+  <block id="2cd70ba1e2d0b294626ea7f96d25a07f" category="paragraph-title">日志收集选项</block>
+  <block id="71f5771dab663d80ba4dad1627e3386a" category="paragraph-title">升级概述</block>
+  <block id="fa5cc5e49b65ffd46ba8881097cf8310" category="list-title">*安装所需硬件*</block>
+  <block id="6b170e726e4567decff7daaed3e1a08b" category="list-title">*配置主机(节点)*</block>
+  <block id="c86064ac886a0aab9f8ecf92f19f98b3" category="list-title">*安装所需软件*</block>
+  <block id="fd9cdaf80c90bdd2d3af18c1c856b60f" category="list-title">*验证您的配置是否符合NetApp安装SolidFire ESDS*的要求</block>
+  <block id="9bfadf4c7ec72b1af0ecb9eaabaf58c8" category="list-title">*了解网络和IP地址要求*</block>
+  <block id="a113f5f001cbfcc5dc2a0dde65f4e2d9" category="list-title">*允许特定端口通过数据中心的防火墙*</block>
+  <block id="45f450486d575041c747125231750ffe" category="list-title">*配置主机网络*</block>
+  <block id="abe03d597b94a3f77cae3615416163ef" category="list-title">*完成其他要求*</block>
+  <block id="64a887b3f268665abd2a1441a3406ea6" category="section-title">动态节点评级(元素12.3.1中的_new！_)</block>
+  <block id="64916198004d1ee19b1b50002f51f1a8" category="paragraph-title">升级选项</block>
+  <block id="df5820ca7f238b48987ff74db1271e4a" category="paragraph-title">更新选项</block>
+  <block id="bac407daf00ae86b0f95e89cf84eeac1" category="section-title">【系统升级】系统升级顺序</block>
+  <block id="a31b6eafc73ca0db90a0d96e6fb9dc93" category="paragraph-title">运行状况检查选项</block>
+  <block id="63f488c7bb829c89f024839d6aa602f4" category="section-title">【自定义PD】自定义保护域</block>
 </blocks>
