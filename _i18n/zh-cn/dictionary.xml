@@ -12363,4 +12363,6 @@
   <block id="bac407daf00ae86b0f95e89cf84eeac1" category="section-title">【系统升级】系统升级顺序</block>
   <block id="a31b6eafc73ca0db90a0d96e6fb9dc93" category="paragraph-title">运行状况检查选项</block>
   <block id="63f488c7bb829c89f024839d6aa602f4" category="section-title">【自定义PD】自定义保护域</block>
+  <block id="29d5a1c31c94981fab1916121b43f763" category="cell">存储节点BMC/IPMI</block>
+  <block id="291dd45cc603b1047e92bf5a13259357" category="cell">RMCP端口。这是管理启用了IPMI的系统所必需的。</block>
 </blocks>
