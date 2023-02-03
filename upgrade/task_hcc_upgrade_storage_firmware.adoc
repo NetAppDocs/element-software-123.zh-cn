@@ -52,7 +52,7 @@ NOTE: 如果您接受EULA、则会在所有未来更新中记录此EULA、并启
 
 
 
-NOTE: 有关适用于您的硬件的完整固件和驱动程序固件列表，请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/NetApp_HCI/Firmware_and_driver_versions_in_NetApp_HCI_and_NetApp_Element_software["此知识库文章"^] （需要登录）。
+NOTE: 有关适用于您的硬件的完整固件和驱动程序固件列表，请参见 link:../hardware/fw_storage_nodes.html["SolidFire 存储节点支持的存储固件版本"]
 
 .升级选项
 选择以下存储固件升级选项之一：
