@@ -63,6 +63,8 @@ homepage:
       url: "/hardware/concept_h410s_h610s_info.html"
     - title: SF 系列硬件信息
       url: "/hardware/concept_sfseries_info.html"
+    - title: 返回出厂映像信息
+      url: "/hardware/concept_rtfi_configure.html"
     - title: NetApp H系列存储节点支持的固件版本
       url: "/hardware/fw_storage_nodes.html"
   - title: 管理存储
