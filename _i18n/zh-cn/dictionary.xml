@@ -9326,9 +9326,6 @@
   <block id="7402074664fcb3503f94b26301713adb" category="admonition">集群 SSL 证书会自动应用于添加到集群中的所有新节点。从集群中删除的任何节点都会还原为自签名证书，并且所有用户定义的证书和密钥信息都会从该节点中删除。</block>
   <block id="25145b9df35ba6ef8386c92cbc7e67aa" category="summary">您可以在联系 NetApp 支持部门并完成初始步骤后关闭整个集群。</block>
   <block id="d3dc741b1e26e016be52c0a55b325fda" category="doc">关闭集群</block>
-  <block id="7e75e710e04194aacb5b7f056ec5e471" category="paragraph">执行以下操作，为集群做好关闭准备：</block>
-  <block id="7bf4e8d030b2c47061505b2052e7e3c8" category="list-text">停止所有 I/O</block>
-  <block id="c1fc137e8581e89d2a694ed758b29c11" category="list-text">断开所有 iSCSI 会话的连接。</block>
   <block id="52774163f10fbc297ca1a2188d7b81c9" category="list-text">导航到集群上的管理虚拟 IP （ MVIP ）地址以打开 Element UI 。</block>
   <block id="ecb5391ff71658726fe4fbade2f9af5e" category="list-text">记下节点列表中列出的节点。</block>
   <block id="7a9ac18ef12501dac2ab0cc718dd03a4" category="list-text">使用集群中每个节点 ID 上指定的 halt 选项运行 Shutdown API 方法。</block>
@@ -12295,7 +12292,6 @@
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter插件5.0或更高版本</block>
   <block id="493b4872884198c5773208e29a2d2ce6" category="paragraph">从适用于VMware vCenter Server 5.0的Element插件开始、此升级操作步骤 涵盖以下升级情形：</block>
   <block id="ffccf7c96c162cb046e6087e5ff2c25c" category="list-text">您要升级到适用于vCenter Server 5.0的Element插件。</block>
-  <block id="b5bcaf2164ee5f3d1a22b016747f08e1" category="list-text">您要升级到8.0或7.0 HTML5 vSphere Web Client。</block>
   <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">适用于vCenter 5.0及更高版本的Element插件与vCenter Server 6.7和6.5不兼容。</block>
   <block id="6243a047f7c7bcc2f2961e8a74f1b5c7" category="admonition">从适用于vCenter Server 4.x的Element插件升级到5.0时、由于无法将数据从vCenter实例复制到远程插件、因此已配置此插件的集群将丢失。您必须将集群重新添加到远程插件。这是从本地插件升级到远程插件时的一次性活动。</block>
   <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter插件4.10或更早版本</block>
@@ -12655,11 +12651,23 @@
   <block id="6488398a09e5e3619c68849839032852" category="list-text">Linux：您对Linux系统有一些了解。</block>
   <block id="88a314dd47a5b577c9b424a096c7a9e8" category="list-text">网络连接：您已熟悉服务器网络连接和网络存储、包括IP地址、网络掩码和网关。</block>
   <block id="229a83df3c23d08a8495591aab99bf5b" category="paragraph">部署和安装RTFI International Organization for Standarding (ISO)映像并执行RTFI过程：</block>
-  <block id="4761cf42d3167c91f942aaa5770bce7b" category="list-text"><block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block></block>
-  <block id="8e03dc636d7913fabfabd316d5e54ac0" category="list-text"><block ref="8e03dc636d7913fabfabd316d5e54ac0" category="inline-xref-macro-rx"></block></block>
-  <block id="82deed01641c36ab7f885c50d27dcaea" category="list-text"><block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block></block>
   <block id="fe87b6b5d8e86013cf5abe3db7879c77" category="list-text">Secure将擦除所有选定驱动器。</block>
-  <block id="98f034cb87c1c327b13fbbbb31bc622b" category="paragraph">有关创建USB密钥或使用BMC执行RTFI过程的信息、请参见 <block ref="4761cf42d3167c91f942aaa5770bce7b" category="inline-xref-macro-rx"></block>。</block>
   <block id="a386fc287fd28e52c07d586cfb7aa08b" category="admonition">启动此过程后、所有数据和配置详细信息将从节点中永久擦除。如果您选择不继续、则系统会将您定向到 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
   <block id="d9730da4fb3635f5ccd1c078266c9334" category="paragraph">如果在RTFI过程中遇到错误消息、请参见 <block ref="82deed01641c36ab7f885c50d27dcaea" category="inline-xref-macro-rx"></block>。</block>
+  <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">您要升级到8.0或7.0 HTML5 vSphere Web Client。</block>
+  <block id="57d4d715f0b6238380a88647e5064ab7" category="paragraph">执行以下操作步骤 以关闭整个集群。</block>
+  <block id="69824b5487e4b72a56fe97cb153b7404" category="list-text">(可选)请联系NetApp支持部门以协助完成准备步骤。</block>
+  <block id="f901f3a344a86528165d6bab6500fbc5" category="list-text">验证所有I/O是否均已停止。</block>
+  <block id="f0b8c58f8c65aac7a69a51384ac1a649" category="list-text">断开所有iSCSI会话的连接：</block>
+  <block id="391aec42faef3b52d4eaaefa153733b2" category="paragraph">重新启动集群时、必须按照特定步骤验证所有节点是否均已联机：</block>
+  <block id="56312700a2d03ce6cacae049f3294807" category="list-text">验证所有严重严重性和<block ref="945c53fff9195b4e69a31c30b6a268c6" prefix=" " category="inline-code"></block> 集群故障已解决。</block>
+  <block id="6331b65d2bb9f0f39b6e8331e5b2c669" category="list-text">等待10到15分钟、以使集群建立连接。</block>
+  <block id="301bf6ea727a40a8d5cc8608cc0c41d7" category="list-text">启动主机以访问数据。</block>
+  <block id="c192e3c2dbd374233d4685406db01520" category="paragraph">如果要在打开节点电源并在维护后验证其运行状况是否良好时留出更多时间、请联系技术支持以帮助延迟数据同步以防止不必要的箱同步。</block>
+  <block id="eef615f9029df3b19885b836d67d03a3" category="inline-link">如何正常关闭和启动NetApp Solidfire/HCI存储集群</block>
+  <block id="b8c22947a9d726cf79f399d361ecc7a2" category="paragraph"><block ref="b8c22947a9d726cf79f399d361ecc7a2" category="inline-link-rx"></block></block>
+  <block id="51de7a2a44178422229997edab051ac7" category="list-text"><block ref="51de7a2a44178422229997edab051ac7" category="inline-xref-macro-rx"></block></block>
+  <block id="8f047e2b521fd8a37be46c7a429ab25b" category="list-text"><block ref="8f047e2b521fd8a37be46c7a429ab25b" category="inline-xref-macro-rx"></block></block>
+  <block id="c2350b958761f326a00bd673fc30fdae" category="list-text"><block ref="c2350b958761f326a00bd673fc30fdae" category="inline-xref-macro-rx"></block></block>
+  <block id="4de84bc0dceded350b6aa7db34f7e00d" category="paragraph">有关创建USB密钥或使用BMC执行RTFI过程的信息、请参见 <block ref="51de7a2a44178422229997edab051ac7" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
