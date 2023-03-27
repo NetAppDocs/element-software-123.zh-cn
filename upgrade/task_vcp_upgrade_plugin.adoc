@@ -21,7 +21,7 @@ keywords: netapp, vcp, vCenter plug-in, upgrade, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 4
 此升级操作步骤 适用于以下升级情形。
 
 
-NOTE: 管理服务2.22.7包括适用于VMware vCenter Server 5.0的NetApp Element 插件、该插件包含远程插件。如果您使用Element插件、则应升级到5.0版、以符合VMware指令、该指令会删除对本地插件的支持。 https://kb.vmware.com/s/article/87880["了解更多信息。"^]。如果不使用此插件、则可以选择进行此升级。
+NOTE: 管理服务2.22.7包括适用于vCenter Server 5.0的Element插件、该插件包含远程插件。如果您使用Element插件、则应升级到管理服务2.22.7或更高版本、以符合取消对本地插件支持的VMware指令。 https://kb.vmware.com/s/article/87880["了解更多信息。"^]。
 
 [role="tabbed-block"]
 ====
@@ -163,8 +163,8 @@ image::vcp_shortcuts_page_accessing_plugin.png[描述了成功升级或安装Ele
 +
 [listing]
 ----
-NetApp Element Plug-in Version: 5.0
-NetApp Element Plug-in Build Number: 37
+NetApp Element Plug-in Version: 5.1
+NetApp Element Plug-in Build Number: 12
 ----
 
 

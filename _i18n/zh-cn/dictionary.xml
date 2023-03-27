@@ -11594,7 +11594,6 @@
   <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">使用适用于vCenter Server 4.x的Element插件升级到VMware vCenter Server 7.0 Update 3时、此插件无法部署。要使用Spring Framework 4解决此问题描述 、请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">对于已注册适用于VMware vCenter Server的NetApp Element 插件的现有vSphere环境、您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
   <block id="56f4bca23bb3dd45148dc7171511b7e5" category="paragraph">此升级操作步骤 适用于以下升级情形。</block>
-  <block id="ec78c54d60054bc44ae2e26c00313bdb" category="admonition">管理服务2.22.7包括适用于VMware vCenter Server 5.0的NetApp Element 插件、该插件包含远程插件。如果您使用Element插件、则应升级到5.0版、以符合VMware指令、该指令会删除对本地插件的支持。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。如果不使用此插件、则可以选择进行此升级。</block>
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter插件5.0或更高版本</block>
   <block id="493b4872884198c5773208e29a2d2ce6" category="paragraph">从适用于VMware vCenter Server 5.0的Element插件开始、此升级操作步骤 涵盖以下升级情形：</block>
   <block id="ffccf7c96c162cb046e6087e5ff2c25c" category="list-text">您要升级到适用于vCenter Server 5.0的Element插件。</block>
@@ -11974,4 +11973,7 @@
   <block id="5a4b8b3924bb822fd8c6ae8c1c9b7030" category="paragraph">您可以向NetApp HCI 设备添加节点。</block>
   <block id="1a6db061a54638a3fdcefd71c9bfd9ad" category="paragraph">添加节点的过程完成后、这些节点将显示在"Active nodes"列表中。在此之前，待定节点将显示在 "Pending Active" 列表中。</block>
   <block id="4a65434b4e4d8c919262bffbcc775165" category="paragraph">将待定节点添加到集群时、SolidFire 会在这些节点上安装集群的Element软件版本。这可能需要几分钟时间。</block>
+  <block id="bddb591f0b60efba3de48f954b55f287" category="inline-link-macro">管理服务2.23.64通知(适用于VMware vCenter Server 5.1.2的NetApp Element 插件)</block>
+  <block id="2926dc5780f42141aca045c0001024a5" category="list-text"><block ref="2926dc5780f42141aca045c0001024a5" category="inline-link-macro-rx"></block></block>
+  <block id="ea52eab386a36623963eee64d8468c76" category="list-text">管理服务2.22.7包括适用于vCenter Server 5.0的Element插件、该插件包含远程插件。如果您使用Element插件、则应升级到管理服务2.22.7或更高版本、以符合取消对本地插件支持的VMware指令。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。</block>
 </blocks>
