@@ -7141,11 +7141,9 @@
   <block id="b142e9d9b67c7c4504bd1ab09fd15db2" category="admonition">有关介绍每个服务包的主要服务，新功能，错误修复和解决方法的最新管理服务发行说明，请参见<block ref="51c56ce961e981301a44342800a6fcbd" category="inline-link-rx"></block></block>
   <block id="1f760966967601f6feb32cc62bb11ca3" category="list-text">选择靠近接口右上角的 * 升级 * 。</block>
   <block id="be441559765f3e52d513b155b4b59981" category="list-text">此时将弹出EULA。向下滚动、选择*我接受当前更新和所有未来更新*、然后选择*保存*。</block>
-  <block id="06194f109ff7ed4270c1e5f89cbe9e74" category="admonition">如果您接受EULA、则会在所有未来更新中记录此EULA、并启用自动下载功能。您将收到有关NetApp软件更新和升级的更新、您可以在方便时自行决定安装这些更新。您可以通过禁用与NetApp联机软件存储库的网络连接来禁用自动下载功能。</block>
   <block id="a5237c2b3436db5dc67ab53b053d3ec9" category="paragraph">您可以使用 NetApp Hybrid Cloud Control UI 或管理节点 REST API 更新管理服务：</block>
   <block id="7d6cae0c176b060b3eb918e8fc3a8a88" category="list-text"><block ref="8b810af37d36ecef3e8ce0cfd28cc60b" category="inline-xref-macro-rx"></block> （建议方法）</block>
   <block id="45d5739efe933eabe3dda4a4ba6b61b1" category="list-text"><block ref="b795f7048c0a3127327e392f4c115728" category="inline-xref-macro-rx"></block></block>
-  <block id="610172e2b0e7d4051f0d0b230bd8c722" category="list-text"><block ref="79f95b99cf6c6dc511dd13bb08f1454f" category="inline-xref-macro-rx"></block></block>
   <block id="2325934efda1befa076510008b0f7646" category="section-title">使用 Hybrid Cloud Control 更新管理服务</block>
   <block id="6dd42a6a80b9ea41a3c15d5cbf5c3528" category="paragraph">您可以使用 NetApp Hybrid Cloud Control 更新 NetApp 管理服务。</block>
   <block id="c3e2bcb5601498c3470bd272236342a3" category="paragraph">管理服务捆绑包可为您的安装提供增强功能和修复，而不是主要版本。</block>
@@ -7158,30 +7156,14 @@
   <block id="6b85e8fee9865d4ab62dcfcd4f941582" category="inline-link">管理服务发行说明</block>
   <block id="f4b19cd96a813fb177542ed57f6d27aa" category="admonition">有关每个服务包版本的可用服务列表，请参见<block ref="b7b8dc48337abf993d8909e2c4d32cb1" category="inline-link-rx"></block>。</block>
   <block id="9c3b6a2840d81e74fa978e35f9fda09e" category="list-text">在 Upgrades 页面上，选择 * 管理服务 * 选项卡。</block>
-  <block id="2a67be48fd33aed34d5d9b95445a0c20" category="paragraph">管理服务选项卡显示管理服务软件的当前版本和可用版本。</block>
-  <block id="25026455f4896275dc71ea344eae7273" category="inline-link-macro">代理配置：</block>
-  <block id="6d991bb9237f73dba10797ec25468d86" category="admonition">如果您的安装无法访问 Internet ，则仅会显示当前软件版本。如果您的安装具有外部连接，但无法访问 NetApp 联机存储库，请检查 <block ref="3fa2d0476e68824edbcf4c56be4ac531" category="inline-link-macro-rx"></block>。</block>
-  <block id="b48c8e3e654392e94eba7ff80f2a9810" category="list-text">如果您的安装可以访问 Internet ，并且可以进行管理服务升级，请选择 * 开始升级 * 。</block>
-  <block id="88cc6eac67699034974d69a75c774238" category="list-text">如果您的安装无法访问 Internet ，请执行以下操作：</block>
   <block id="3a91ea590517ccc87ccaf6cbda3ac55c" category="list-text">按照页面上的说明将管理服务升级包下载并保存到您的计算机。</block>
   <block id="59ab5341afeb797e4cbab599e21e347f" category="list-text">选择 * 浏览 * 以找到您保存的软件包并上传它。</block>
   <block id="30c2b654de6b157d3965b69e2e973b9c" category="paragraph">升级开始后，您可以在此页面上查看升级状态。升级期间，您可能会与 NetApp Hybrid Cloud Control 断开连接，因此必须重新登录才能查看升级结果。</block>
   <block id="e1ab7975bc85b8e4a805e35bfd948176" category="section-title">使用管理节点 API 更新管理服务</block>
-  <block id="f64b52761fbac72e8bfdd229b3a113f1" category="paragraph">理想情况下，用户应从 NetApp Hybrid Cloud Control 执行管理服务更新。但是，您可以从管理节点使用 REST API UI 手动更新管理服务。</block>
   <block id="9a452c7dc2442a21923d0c9fff059919" category="list-text">在管理节点上打开 REST API UI ： `https://&lt;ManagementNodeIP&gt;/mnode`</block>
-  <block id="fe1085046bceaf490556bf74e0f01c15" category="list-text">（可选）确认管理节点服务的可用版本： `get /services/versions`</block>
-  <block id="0edefa8da79067ac4b94f9b1b2a9af8c" category="list-text">（可选）获取有关最新版本的详细信息： `获取 /services/versions/latest`</block>
-  <block id="b4851bdc860d51294258bcfa6507a2f6" category="list-text">（可选）获取有关特定版本的详细信息： `GET /services/versions/ ｛ version ｝ /info`</block>
-  <block id="bf5a6801d77133c83554e3433950d36e" category="list-text">执行以下管理服务更新选项之一：</block>
-  <block id="0da74aa7d2a1855d917aaf432d2d3ca4" category="list-text">运行此命令可更新到最新版本的管理节点服务： `PUT /services/update/latest`</block>
-  <block id="0663ec28ae182530f1f365d17c98c119" category="list-text">运行此命令以更新到管理节点服务的特定版本： `PUT /services/update/ ｛ version ｝`</block>
-  <block id="f488e48b4d2bc7d793f0e09cb03654ee" category="list-text">运行 `get/services/update/status` 以监控更新状态。</block>
   <block id="0e4f8b996ad3d1d666cae0ca65696890" category="paragraph">成功更新将返回类似于以下示例的结果：</block>
-  <block id="e620d1115b8f26b9e2c66f46d34832bc" category="section-title">使用非公开站点的管理节点 API 更新管理服务</block>
   <block id="c202282c44af53d5ea8a677636541731" category="paragraph">理想情况下，用户应从 NetApp Hybrid Cloud Control 执行管理服务更新。但是，您可以使用 REST API 手动将管理服务的服务包更新上传到，提取并部署到管理节点。您可以从管理节点的 REST API UI 运行每个命令。</block>
   <block id="3601cad086244ec56eee653db5e2b0a3" category="list-text">您已部署 NetApp Element 软件管理节点 11.3 或更高版本。</block>
-  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支持站点</block>
-  <block id="9d89df9ed11d9d07aa2a21fce8623b87" category="list-text">您已从下载服务包更新<block ref="1c68cef0c53db6ec1d50d3b221c314cd" category="inline-link-rx"></block> 可在非公开站点中使用的设备。</block>
   <block id="54521ea545972501500b09f85df8ba55" category="list-text">使用以下命令在管理节点上上传并提取服务包： `PUT /services/upload`</block>
   <block id="4963e624e3688c6904a816aa37c6c7cc" category="list-text">在管理节点上部署管理服务： `PUT /services/Deploy`</block>
   <block id="c512caf817d81cdc178fb65c97607344" category="list-text">监控更新状态： `get /services/update/status`</block>
@@ -7332,27 +7314,22 @@
   <block id="2882996895673f16b2fcf0cabfb994f1" category="admonition">有关使用 NetApp Hybrid Cloud Control 升级存储集群时的潜在问题及其解决方法，请参见<block ref="385c83615df1d77fbf0bae3f06fabb3d" category="inline-link-rx"></block>。</block>
   <block id="021194ed35c1ca85c5ddd9daaf8630c3" category="admonition">每个存储节点的升级过程大约需要 30 分钟。如果要将 Element 存储集群升级到版本 2.76 以上的存储固件，则只有在将新固件写入节点后，各个存储节点才会在升级期间重新启动。</block>
   <block id="8d2b20731c568a1d9a02267e5d20edb7" category="list-text">在 * 升级 * 页面上，选择 * 存储 * 。</block>
-  <block id="41248545ed2949a832d88f9ea8c00917" category="admonition">* 存储 * 选项卡列出了安装过程中的存储集群。如果 NetApp Hybrid Cloud Control 无法访问某个集群，则该集群将不会显示在 * 升级 * 页面上。如果您的集群运行的是 Element 12.0 或更高版本，则会看到为这些集群列出的当前固件包版本。如果一个集群中的节点具有不同的固件版本，或者升级过程中，您将在 * 当前固件包版本 * 列中看到 * 多个 * 。您可以选择 * 多个 * 以导航到 * 节点 * 页面以比较固件版本。如果所有集群运行的 Element 版本均早于 12.0 ，则您将看不到有关固件包版本号的任何信息。如果集群是最新的且 / 或没有可用的升级软件包，则不会显示 * 元素 * 和 * 仅固件 * 选项卡。在升级过程中，也不会显示这些选项卡。如果显示的是 * 元素 * 选项卡，而不是 * 仅固件 * 选项卡，则表示没有可用的固件包。</block>
   <block id="f1bd2e17b5412e4b45851ad42541f684" category="list-text">从以下选项中进行选择，并执行一组适用于您的集群的步骤：</block>
-  <block id="042b4c254a65c4222ecfd8eda19de8fb" category="cell">您的管理节点具有外部连接。</block>
   <block id="c2478fbc134086873c832f9086152247" category="list-text">选择要升级的集群旁边的下拉箭头。</block>
   <block id="e0d814d8ce005e1e08731f39dc4cff27" category="list-text">选择 * 仅固件 * ，然后从可用的升级版本中进行选择。</block>
   <block id="c132ec9989c2f6d64865e3b80e0712f9" category="list-text">选择 * 开始升级 * 。</block>
   <block id="b9088c022e9648ce7ddea6e6d4a7d2a2" category="admonition">升级期间， * 升级状态 * 会发生更改，以反映此过程的状态。它也会根据您执行的操作而发生更改，例如暂停升级或升级返回错误。请参见 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="1c1f68c70e4604204e19388cd8dedfa2" category="admonition">在升级过程中，您可以退出此页面，稍后再返回此页面以继续监控进度。如果集群行已折叠，则此页面不会动态更新状态和当前版本。必须展开集群行才能更新此表，您也可以刷新此页面。</block>
   <block id="f7c462da794bbac0b6cb931507af8070" category="paragraph">升级完成后，您可以下载日志。</block>
-  <block id="8fce94dc58f1bdc7de438659f9a9a00b" category="cell">您的管理节点位于不具有外部连接的非公开站点中。</block>
   <block id="308f16f303adc416b27b236c19797514" category="list-text">选择 * 浏览 * 上传您下载的升级软件包。</block>
   <block id="9f3e44fdaf4628028bd071e9fdf42636" category="list-text">等待上传完成。进度条会显示上传状态。</block>
   <block id="4109e9de1e5e5e6a88e7ab1943736894" category="admonition">如果您离开浏览器窗口，则文件上传将丢失。</block>
-  <block id="929933851dc2ac970fff1ef0a8351b29" category="paragraph">成功上传并验证文件后，将显示一条屏幕消息。验证可能需要几分钟时间。如果在此阶段离开浏览器窗口，则会保留文件上传。升级完成后，您可以下载日志。有关各种升级状态更改的信息，请参见 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="d3e7182b84a940e7db18b7fb84516b9d" category="section-title">升级状态更改</block>
   <block id="03f25bbad83c64043f813d6fad6846de" category="paragraph">以下是用户界面中的 * 升级状态 * 列在升级过程之前，期间和之后显示的不同状态：</block>
   <block id="6d34e3d06ec7dfd7e469ec4d37b9ae1d" category="cell">升级状态</block>
   <block id="e519a1ecd0afa6828cea3c07f7d09b4a" category="cell">最新</block>
   <block id="79767150703c682eb62b32792815ff4b" category="cell">集群已升级到最新可用 Element 版本，或者固件已升级到最新版本。</block>
   <block id="6fc59d6889d5ac60b02946bb6b8b8898" category="cell">无法检测</block>
-  <block id="5d1b774bcdd716279a4e1f6c45c21ae4" category="cell">如果 NetApp Hybrid Cloud Control 无法通过外部连接访问联机软件存储库，则会显示此状态，而不是显示 * 可用版本 * 。如果存储服务 API 返回的升级状态不在可能升级状态的枚举列表中，则也会显示此状态。</block>
   <block id="a5d11b04812fa774f9a940e366eac9ac" category="cell">可用版本</block>
   <block id="d9ce4c41aa5560b51aa0d618e34742a8" category="cell">可以升级较新版本的 Element 和 / 或存储固件。</block>
   <block id="c9413dd7682a45da9ecc9efa8cea47d7" category="cell">正在进行中</block>
@@ -7371,14 +7348,7 @@
   <block id="e0cac02c93ade1b7ecc2eb64907171a8" category="admonition">在更新节点时中止集群升级可能会导致驱动器异常地从节点中删除。如果驱动器被异常删除，则在升级期间重新添加驱动器需要 NetApp 支持部门手动干预。节点执行固件更新或更新后同步活动可能需要较长时间。如果升级进度似乎停滞，请联系 NetApp 支持部门以获得帮助。</block>
   <block id="3aff5fc3a8e8d7210a56cf227b42a6e8" category="section-title">使用 NetApp Hybrid Cloud Control API 升级存储固件</block>
   <block id="13381b43a34c53873fa3ea94ea881f65" category="paragraph">您可以使用 API 将集群中的存储节点升级到最新的 Element 软件版本。您可以使用自己选择的自动化工具来运行 API 。此处介绍的 API 工作流使用管理节点上提供的 REST API UI 作为示例。</block>
-  <block id="8c641b6be2c77d41b861c68406aa882e" category="list-text">根据您的连接执行以下操作之一：</block>
-  <block id="99d815c1264bfc1b74f7a653fb83e659" category="list-text">验证存储库连接：</block>
   <block id="85bb06226f2384b478691f49e53204fc" category="list-text">关闭授权窗口。</block>
-  <block id="132a5b6da037e3c0aba1107add99cd58" category="list-text">从 REST API UI 中，选择 * 获取​ / packages​ / 远程 - repository​ / 连接 * 。</block>
-  <block id="7ac2eb4e7073a0bed37085ee1d0656de" category="list-text">如果返回代码 200 ，请转至下一步。如果未连接到远程存储库，请建立连接或使用非公开站点选项。</block>
-  <block id="ecd4792b2445292557fc3b37de2cda15" category="list-text">查找升级软件包 ID ：</block>
-  <block id="bd91bfdcf4a916f6b8c00c25da13251b" category="list-text">从 REST API UI 中，选择 * 获取 /packages* 。</block>
-  <block id="fa296e9495ac8602647feef1c1f92880" category="list-text">在响应中，复制并保存固件包 ID ，以供后续步骤使用。</block>
   <block id="814733d416c95bcc389df46e42881e26" category="inline-link">下载页面</block>
   <block id="9b8271bf8ee401fbab82cfd673a6efe7" category="list-text">将存储固件升级软件包下载到可供管理节点访问的设备；转到 Element 软件<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 并下载最新的存储固件映像。</block>
   <block id="3d849e77fb6435c594cb34aff5254c7a" category="list-text">将存储固件升级软件包上传到管理节点：</block>
@@ -7435,12 +7405,8 @@
   <block id="18efefbb7dfc549a016b6c88a83bd60d" category="admonition">如果您要将 H610S 系列节点升级到 Element 12.3.x ，并且此节点运行的 Element 版本早于 11.8 ，则需要执行其他升级步骤（<block ref="705f7add14cc7784392a1a0405b32daa" category="inline-xref-macro-rx"></block>）。如果您运行的是 Element 11.8 或更高版本，则不需要执行其他升级步骤（第 2 阶段）。</block>
   <block id="1a1c6d70aec56ed56fdc5c3ac8162a8b" category="section-title">使用 NetApp Hybrid Cloud Control UI 升级 Element 存储</block>
   <block id="a544a5293c147dec832e983a6fbad504" category="paragraph">您可以使用 NetApp Hybrid Cloud Control UI 升级存储集群。</block>
-  <block id="1fe3f0a86f12c07fb4f3cf17d971d675" category="list-text">如果您的管理节点未连接到 Internet ，则已从以下位置下载此软件包：</block>
-  <block id="106cc5a0e6a0bb3c0776b3ba8fb64337" category="inline-link">适用于 SolidFire 存储集群的 Element 软件升级包（ .tar.gz ）</block>
-  <block id="49e349363aad0972c82ddaf25dd30f70" category="paragraph"><block ref="49e349363aad0972c82ddaf25dd30f70" category="inline-link-rx"></block></block>
   <block id="7fad05c5548f9989eaee59a54633305a" category="admonition">对于非 H610S 平台，每个节点的升级过程大约需要 30 分钟。</block>
   <block id="eced5161fd4b5a5d98480da44ccabc87" category="paragraph">* 存储 * 选项卡列出了安装过程中的存储集群。如果 NetApp Hybrid Cloud Control 无法访问某个集群，则该集群将不会显示在 * 升级 * 页面上。</block>
-  <block id="28915945fea0308bbd2cdf191b79dd68" category="list-text">选择要升级的集群旁边的下拉箭头，然后从 * 元素 * 选项卡下提供的升级版本中进行选择。</block>
   <block id="effc57e6ad213336e96f00439b792658" category="paragraph">成功上传并验证文件后，将显示一条屏幕消息。验证可能需要几分钟时间。如果在此阶段离开浏览器窗口，则会保留文件上传。</block>
   <block id="2b96c3916188bec9de822541d9cf623f" category="cell">您要升级运行的 Element 版本早于 11.8 的 H610S 集群。</block>
   <block id="b6d17024c4c99e0348e4d802e2508b6b" category="list-text">选择要升级的集群旁边的下拉箭头，然后从可用的升级版本中进行选择。</block>
@@ -7448,11 +7414,9 @@
   <block id="2351c1e27093e71da7b231f5059cc476" category="list-text">完成中所需的其他步骤（第 2 阶段）<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block>，并在用户界面中确认您已完成第 2 阶段。</block>
   <block id="d215420632f75acd5be40e1f61fad92e" category="paragraph">升级完成后，您可以下载日志。有关各种升级状态更改的信息，请参见 <block ref="963ffe23b927e51707381f60a050d9f4" category="inline-xref-macro-rx"></block>。</block>
   <block id="80744cb20ac19a71c799d04e9142c0f5" category="cell">集群已升级到最新可用的 Element 版本。</block>
-  <block id="00bdf0ae9f642cb5870113a82a86b5ba" category="cell">如果 NetApp Hybrid Cloud Control 无法通过外部连接访问联机软件存储库，则会显示此状态，而不是显示 * 可用版本 * 。如果您已建立外部连接，但仍看到此消息，请检查 <block ref="3fa2d0476e68824edbcf4c56be4ac531" category="inline-link-macro-rx"></block>。</block>
   <block id="c25db468e3487f49a3fe8a8fd3ee6fca" category="cell">完成并进行跟进</block>
   <block id="35be88b3f15b8f03a1b80ac136a5039d" category="cell">仅适用于从早于 118 的 Element 版本升级的 H610S 节点。升级过程的第 1 阶段完成后，此状态将提示您执行升级的第 2 阶段（请参见<block ref="f89d7bc8c94108aeb49b4fdeac4ce106" category="inline-link-rx"></block>）。完成第 2 阶段并确认已完成后，状态将变为 * 最新 * 。</block>
   <block id="c46945f40a6b2e92964b73d6d398f9d3" category="section-title">使用 NetApp Hybrid Cloud Control API 升级 Element 存储</block>
-  <block id="92c655ce479b4404b3a51afa0527fd9b" category="list-text">在响应中，复制并保存软件包 ID ，以供后续步骤使用。</block>
   <block id="1ed5061d3b76fa0c219c1f1d3b386470" category="list-text">将存储升级软件包下载到可供管理节点访问的设备。</block>
   <block id="592247e1218ecdf894b0dc3bf1e2b0c6" category="paragraph">转至 Element 软件<block ref="42e6de607bd49922ef2d21825951aede" category="inline-link-rx"></block> 并下载最新的存储节点映像。</block>
   <block id="ca9b271bda1fd83c0839a53fe115bfdb" category="list-text">将存储升级软件包上传到管理节点：</block>
@@ -8645,13 +8609,9 @@
   <block id="1aa8b758f81e4b362f8fc94cd4c2a3ba" category="paragraph">创建 NetApp Element 软件集群时，集群会创建一个唯一的自签名安全套接字层（ SSL ）证书和专用密钥，用于通过 Element UI ，每节点 UI 或 API 进行所有 HTTPS 通信。Element 软件支持自签名证书以及由可信证书颁发机构（ CA ）颁发和验证的证书。</block>
   <block id="774ce4e623f683d68865c30ea0ac37fa" category="paragraph">您可以使用以下 API 方法获取有关默认 SSL 证书的详细信息并进行更改。</block>
   <block id="cddbead568984bbddd14181e555c89ec" category="inline-link-macro">《 NetApp Element 软件 API 参考》</block>
-  <block id="5a1085897e38e4e51b92668061c6497c" category="paragraph">有关每种方法的信息，请参见 <block ref="27df1ddfd415d14d906f38bd54bde22c" category="inline-link-macro-rx"></block>。</block>
   <block id="c7d6aa2232acd143092ba0d52cae5ba8" category="list-text">* GetSSLCertificate *</block>
-  <block id="04b9e2887637b86b8614c4021d65bb52" category="paragraph">您可以使用此方法检索有关当前安装的 SSL 证书的信息，包括所有证书详细信息。</block>
   <block id="855a3dbbd51c2fdec4e1d006b91d6323" category="list-text">* 设置 SSLCertificate *</block>
-  <block id="42eb9a81f7de36c9246dce8d9177d0de" category="paragraph">您可以使用此方法将集群和每节点 SSL 证书设置为您提供的证书和专用密钥。系统会验证证书和专用密钥，以防止应用无效证书。</block>
   <block id="84295a797b60702f81143ab1aa871f82" category="list-text">* 删除 SSLCertificer*</block>
-  <block id="a302712f1b09c9dcdfc7d5808cb5fe30" category="paragraph">此方法将删除当前安装的 SSL 证书和专用密钥。然后，集群将生成新的自签名证书和专用密钥。</block>
   <block id="7402074664fcb3503f94b26301713adb" category="admonition">集群 SSL 证书会自动应用于添加到集群中的所有新节点。从集群中删除的任何节点都会还原为自签名证书，并且所有用户定义的证书和密钥信息都会从该节点中删除。</block>
   <block id="25145b9df35ba6ef8386c92cbc7e67aa" category="summary">您可以在联系 NetApp 支持部门并完成初始步骤后关闭整个集群。</block>
   <block id="d3dc741b1e26e016be52c0a55b325fda" category="doc">关闭集群</block>
@@ -9177,13 +9137,6 @@
   <block id="ff888c386cbf7561a41674237043ab02" category="summary">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="bbb9ca100f5b4a2074b8caeaaf4b1ae0" category="paragraph">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
   <block id="2f5dc9e1194b10f0920c3f6b85205b99" category="paragraph">除非另有说明，否则所有端口均为 TCP 端口，并且应允许在 NetApp 支持服务器，管理节点和运行 Element 软件的节点之间进行双向通信。</block>
-  <block id="95f27799ddeb01b37a606c94f6349232" category="paragraph">NetApp Hybrid Cloud Control Web UI和API可从NetApp联机软件存储库下载软件包。因此，根据内容交付网络，某些 URL 或 IP 地址可能会解析为其他 URL 或 IP 地址。如果可能，您应与网络工程师合作，使用以下常规步骤将这些 URL 或 IP 地址添加到防火墙规则中：</block>
-  <block id="468e2827e5dc0169c965a021b0f015d8" category="list-text">使用wget或cURL实用程序访问URL (例如support-sg-nawest.netapp.com)。</block>
-  <block id="887a9d2ae67bb61c76d5d0032a4b7b0f" category="list-text">检查连接、如以下示例所示：</block>
-  <block id="9b6b0ba6c58622cfc8a6178412a0e4bf" category="image-alt">检查端口连接</block>
-  <block id="17dc6266a36d140e3656a007ab0a9fce" category="list-text">无法访问此URL (与support-sg-nawest.netapp.com不同)。</block>
-  <block id="cca942e088eb1473b2eb9de24822300b" category="list-text">编辑防火墙规则以允许使用新 URL 。</block>
-  <block id="fc0bbd3b7c620ea524d15f50953b65de" category="list-text">重复上述步骤，直到访问尝试成功为止。</block>
   <block id="1f2681a91e9e795d6ebb1d5828cd1182" category="admonition">在管理节点，运行 Element 软件的节点和集群 MVIP 之间启用 ICMP 。</block>
   <block id="15a1051d03ca55ab79226f44fa683bbe" category="paragraph">下表使用了以下缩写词：</block>
   <block id="60175d30ed8f8459b2f835b923bb4ee5" category="list-text">mip ：管理 IP 地址，每节点地址</block>
@@ -9200,13 +9153,6 @@
   <block id="b20a6c801c401908aa3c96f370665e05" category="paragraph">DNS 查找</block>
   <block id="c203d8a151612acf12457e4d67635a95" category="paragraph">442</block>
   <block id="3576cff8b205debb58711ff360f51ffd" category="paragraph">通过 UI 和 API 访问存储节点和 Element 软件升级</block>
-  <block id="27639a1d6103dcea8efd114fa6c08ad8" category="paragraph">新版本通知：</block>
-  <block id="ab3ee28175c91fc275541983d197ab00" category="list-text">`https://support.netapp.com/aods/`</block>
-  <block id="202ff041fdb9a5ee3579e8cb7984ef6b" category="paragraph">软件下载：</block>
-  <block id="9fc75d41716cfd46199787dcf77473a1" category="list-text">`https://support-sg-emea.netapp.com`</block>
-  <block id="a1b1a9120bbc7238c7b6088d7223d194" category="list-text">`https://support-sg-naeast.netapp.com`</block>
-  <block id="219033cd316af31663b173765be6dd78" category="list-text">`https://support-sg-nawest.netapp.com`</block>
-  <block id="d747a3883d729833b05cf76084503b96" category="paragraph">管理节点服务升级</block>
   <block id="0c29e1667ad297897573438219b3e1c6" category="paragraph">repo.netapp.com</block>
   <block id="43416d1cebc089588a77207470ee9f35" category="paragraph">可访问安装 / 更新内部部署所需的组件。</block>
   <block id="b7328847f651fa46bcdd00a86f903b6a" category="paragraph">见证节点</block>
@@ -11524,7 +11470,6 @@
   <block id="a76e77cdf9ddd9de47f6767bd156c68a" category="summary">Element系统使用NetApp Element API作为其特性和功能的基础。使用 Element UI ，您可以在使用界面时查看系统上各种类型的实时 API 活动。通过 API 日志，您可以查看用户发起的后台系统 API 活动，以及在当前查看的页面上进行的 API 调用。</block>
   <block id="eb78259501a2ba2c5586f9c5378b0722" category="paragraph">借助 NetApp Element 软件，您可以选择在集群上启用联邦信息处理标准（ Federal Information Processing Standards ， FIPS ） 140-2 操作模式。启用此模式将激活NetApp加密安全模块(NetApp Cryptographic Security Module、NCSM)、并对通过HTTPS与NetApp Element UI和API进行的所有通信使用FIPS 140-2 1级认证加密。</block>
   <block id="9bcbeef20d899b1f6c3b91bed9318949" category="summary">您可以从NetApp Element UI中的数据保护选项卡创建SnapMirror关系。要在用户界面中查看此信息，必须启用 SnapMirror 功能。</block>
-  <block id="04c9a1dceaa7848075695a7a05510e89" category="paragraph">您可以使用NetApp Element API更改集群中存储节点的默认SSL证书和专用密钥。</block>
   <block id="75cf134eb28470632a8ed825c6876dfa" category="paragraph">检测到链路故障后、在禁用从属服务器之前等待的时间(以毫秒为单位)。</block>
   <block id="dbc5bb01b5e0b9429317021ba7f41a80" category="paragraph">检查MII链路状态是否存在链路故障的频率(以毫秒为单位)。</block>
   <block id="3580d7d6eae3196ebe1486dd612a7945" category="paragraph">检测到链路后、在启用从属服务器之前等待的时间(以毫秒为单位)。</block>
@@ -11583,24 +11528,17 @@
   <block id="307d07425c54bb4aa0778a14487a9a93" category="list-text">使用适用于vCenter Server 4.10及更早版本的NetApp Element 插件从其他vCenter Server管理集群资源<block ref="b9ce345290cb228a35dd424c40eebf37" category="inline-link-rx"></block> 仅限于本地存储集群。</block>
   <block id="9db4acd10c15ec173e6516c347342e25" category="admonition">您应在vCenter中创建新的NetApp HCC角色以添加控制器子资产。这一新的 NetApp HCC 角色会将管理节点服务视图限制为纯 NetApp 资产。请参见 <block ref="8fe5279440ee3c239e840ed9b8e10ddd" category="inline-link-macro-rx"></block>。</block>
   <block id="6b777567daa827d5b0665b94c630539f" category="inline-link">vCenter插件5.0发行说明</block>
-  <block id="6e965491616fff846a7ae36b0c989a99" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block> _new_</block>
   <block id="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="list-text"><block ref="a9fc1ab89aaaf4e529a9e4251a8b3b33" category="inline-link-rx"></block></block>
   <block id="d4ab00a63ae74cf5a760f97c2f37cc47" category="paragraph">成功完成配对后、您应刷新Volumes表以从配对卷的*操作*列表中删除*配对*选项。如果不刷新表，则 * 配对 * 选项仍可供选择。如果再次选择*配对*选项、则会打开一个新选项卡、由于卷已配对、系统会报告<block ref="a72c919331eaecc7971bc1aee1134ebc" prefix=" " category="inline-code"></block> Element UI页面的*对卷*窗口中显示错误消息。</block>
   <block id="07800d7fa4e084c955b9006d30b6eed1" category="paragraph">远程插件</block>
   <block id="b8ffa41d4e492f0fad2f13e29e1762eb" category="paragraph">8333</block>
   <block id="5b3a5766ccd94c0ef0148e61340c831e" category="paragraph">远程vCenter插件服务</block>
   <block id="ce02290d452fe7b936543abc774ea33a" category="list-text">管理节点 12.3.2 为启用了虚拟卷（ VVOL ）功能的存储集群提供了一个安全缓解措施。如果存储集群已位于Element 12.3上且已启用VVol功能、则应升级到12.3.2。</block>
-  <block id="1291d04b420cee74581d131dee5acf86" category="paragraph">您应升级到适用于vCenter Server 5.0的NetApp Element 插件、以便能够在VMware vCenter 7.0 Update 3中部署此插件、而无需应用临时解决策。</block>
   <block id="af5fe52fe204cf15311c07d5bf36b9a1" category="paragraph">使用适用于vCenter Server 4.x的Element插件升级到VMware vCenter Server 7.0 Update 3时、此插件无法部署。要使用Spring Framework 4解决此问题描述 、请参见<block ref="770c119932f7fa962a47dc0795db1af6" category="inline-link-rx"></block>。</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">对于已注册适用于VMware vCenter Server的NetApp Element 插件的现有vSphere环境、您可以在首次更新包含此插件服务的管理服务包后更新此插件注册。</block>
-  <block id="56f4bca23bb3dd45148dc7171511b7e5" category="paragraph">此升级操作步骤 适用于以下升级情形。</block>
   <block id="1ec8160ad002d3b57b0367c162c7e579" category="open-title">Element vCenter插件5.0或更高版本</block>
-  <block id="493b4872884198c5773208e29a2d2ce6" category="paragraph">从适用于VMware vCenter Server 5.0的Element插件开始、此升级操作步骤 涵盖以下升级情形：</block>
-  <block id="ffccf7c96c162cb046e6087e5ff2c25c" category="list-text">您要升级到适用于vCenter Server 5.0的Element插件。</block>
   <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">适用于vCenter 5.0及更高版本的Element插件与vCenter Server 6.7和6.5不兼容。</block>
-  <block id="6243a047f7c7bcc2f2961e8a74f1b5c7" category="admonition">从适用于vCenter Server 4.x的Element插件升级到5.0时、由于无法将数据从vCenter实例复制到远程插件、因此已配置此插件的集群将丢失。您必须将集群重新添加到远程插件。这是从本地插件升级到远程插件时的一次性活动。</block>
   <block id="e6d87bbd73a5a86fcf1e6cbc75296808" category="open-title">Element vCenter插件4.10或更早版本</block>
-  <block id="523b0480434215d8d59b3dce41707a7e" category="paragraph">对于适用于vCenter Server 4.10或更早版本的Element插件、此升级操作步骤 适用于以下升级情形：</block>
   <block id="524f8acc9609df7272285a19757aefcb" category="list-text">您要升级到适用于vCenter Server 4.10、4.9、4.8、4.7、4.6的Element插件、 4.5或4.4。</block>
   <block id="c0e80cf197d1adf76fef790848a92f8f" category="list-text">此插件与适用于VMware vCenter Server 4.x的VMware vCenter Server 8.0 Element插件不兼容</block>
   <block id="a95f4f0d2a0a7e7a472e3b6c6d23d07c" category="list-text">* vCenter Server*：您的vCenter插件4.x或5.x版已注册到vCenter Server。从注册实用程序 <block ref="0e0152f7592ffa53464a10c6a48053e7" prefix="(" category="inline-code"></block>)、选择*注册状态*、填写必要字段、然后选择*检查状态*以验证vCenter插件是否已注册以及当前安装的版本号。</block>
@@ -11623,7 +11561,6 @@
   <block id="1381491a5bb8087f95db0601150c5c28" category="paragraph">存储节点BMC/IPMI H410和H600系列</block>
   <block id="ad097a4f1c93214faa0a1ca354a82225" category="paragraph">623 UDP</block>
   <block id="483602128e75be96f5280855d8065878" category="paragraph">远程管理控制协议端口。这是管理启用了IPMI的系统所必需的。</block>
-  <block id="3ef00ef1af91bf9fe0b72f4052a67f59" category="list-text">适用于vCenter Server 5.0的Element插件的vCenter插件注册页面：</block>
   <block id="1875d143de1e9be70dc9e780b41377fe" category="list-text">适用于vCenter Server 4.10或更早版本的Element插件的vCenter插件注册页面：</block>
   <block id="b8b146fd1e1ecdf074536a02bfe40871" category="list-text">(对于内部服务器/非公开站点)根据适用于vCenter的Element插件版本、此插件JSON文件或插件ZIP的自定义URL：</block>
   <block id="1993643c12bb4ee547f04d8d85f8c4bf" category="list-text">从适用于vCenter Server 5.0的Element插件开始、将显示NetApp Element 远程插件扩展点：</block>
@@ -11976,4 +11913,41 @@
   <block id="bddb591f0b60efba3de48f954b55f287" category="inline-link-macro">管理服务2.23.64通知(适用于VMware vCenter Server 5.1.2的NetApp Element 插件)</block>
   <block id="2926dc5780f42141aca045c0001024a5" category="list-text"><block ref="2926dc5780f42141aca045c0001024a5" category="inline-link-macro-rx"></block></block>
   <block id="ea52eab386a36623963eee64d8468c76" category="list-text">管理服务2.22.7包括适用于vCenter Server 5.0的Element插件、该插件包含远程插件。如果您使用Element插件、则应升级到管理服务2.22.7或更高版本、以符合取消对本地插件支持的VMware指令。<block ref="3eff1b8505d27ff6caa23fbbb1b7b25c" category="inline-link-rx"></block>。</block>
+  <block id="f77430f8b3c4f14f1dcd175dca1d54cf" category="paragraph">您应升级到适用于vCenter Server 5.0或更高版本的NetApp Element 插件、以便能够在VMware vCenter 7.0 Update 3中部署此插件、而无需应用临时解决策。</block>
+  <block id="4af99aa6c1be006a7c064cb06b9464ac" category="cell">运行Element 11.8及更高版本的所有集群</block>
+  <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">此升级操作步骤包括以下升级情形：</block>
+  <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">您要升级到适用于vCenter Server 5.1或5.0的Element插件。</block>
+  <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">从适用于vCenter Server 4.x的Element插件升级到5.x时、由于无法将数据从vCenter实例复制到远程插件、因此已配置此插件的集群将丢失。您必须将集群重新添加到远程插件。这是从本地插件升级到远程插件时的一次性活动。</block>
+  <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">适用于vCenter Server 5.x的Element插件的vCenter插件注册页面：</block>
+  <block id="0ac35a688d7a23e1caba58dbbf08c4d7" category="paragraph">* 存储 * 选项卡列出了安装过程中的存储集群。如果 NetApp Hybrid Cloud Control 无法访问某个集群，则该集群将不会显示在 * 升级 * 页面上。如果您的集群运行的是 Element 12.0 或更高版本，则会看到为这些集群列出的当前固件包版本。如果一个集群中的节点具有不同的固件版本，或者升级过程中，您将在 * 当前固件包版本 * 列中看到 * 多个 * 。您可以选择 * 多个 * 以导航到 * 节点 * 页面以比较固件版本。如果所有集群运行的 Element 版本均早于 12.0 ，则您将看不到有关固件包版本号的任何信息。</block>
+  <block id="df3b4418989705f2099ec054a495c6ff" category="paragraph">如果集群是最新的且 / 或没有可用的升级软件包，则不会显示 * 元素 * 和 * 仅固件 * 选项卡。在升级过程中，也不会显示这些选项卡。如果显示的是 * 元素 * 选项卡，而不是 * 仅固件 * 选项卡，则表示没有可用的固件包。</block>
+  <block id="c7f3047b6654f1cb88fcfe6e47c92593" category="cell">如果存储服务API返回的升级状态不在可能升级状态的枚举列表中、则会显示此状态。</block>
+  <block id="f3239c80004833605a44320f76f29a78" category="paragraph">更改默认SSL证书：</block>
+  <block id="00b6f5df795659d436d482ffd81033aa" category="inline-link-macro">更改管理节点的默认SSL证书</block>
+  <block id="fe6a80fba2305243dd21703b873b6d51" category="list-text"><block ref="fe6a80fba2305243dd21703b873b6d51" category="inline-link-macro-rx"></block></block>
+  <block id="96c37e9c5684e9f2a7ffd6a79512cde2" category="paragraph">您可以使用NetApp Element API更改管理节点的默认SSL证书和专用密钥。</block>
+  <block id="d311117e36e090462c70d49316078938" category="paragraph">配置管理节点时、它会创建一个唯一的自签名安全套接字层(SSL)证书和专用密钥、用于通过Element UI、每节点UI或API进行所有HTTPS通信。Element 软件支持自签名证书以及由可信证书颁发机构（ CA ）颁发和验证的证书。</block>
+  <block id="8fff04b1c0c323ac1aac0d43f5e6b4f8" category="list-text">* GetNodeSSLCertificer*</block>
+  <block id="a07612f154836b90b33c91e3d4becfe8" category="inline-link-macro">GetNodeSSLCertificate方法</block>
+  <block id="e33d1822bd6d1efb8885f0c9f078767e" category="paragraph">您可以使用 <block ref="fc5ae91d2a3def87eb640426dd21d6c3" category="inline-link-macro-rx"></block> 检索有关当前安装的SSL证书的信息、包括所有证书详细信息。</block>
+  <block id="58f6e4a954eca307131e675eba49accc" category="list-text">*设置NodeSSLCertificer*</block>
+  <block id="123b81eef3f2300f60e089e9078ee7c3" category="inline-link-macro">SetNodeSSLCertificate方法</block>
+  <block id="d229d7ad000aef94c4fc9c92a09ef2f9" category="paragraph">您可以使用 <block ref="a3f906e270f396b1e0abeb1e4b45aabc" category="inline-link-macro-rx"></block> 将集群和每节点SSL证书设置为您提供的证书和专用密钥。系统会验证证书和专用密钥，以防止应用无效证书。</block>
+  <block id="6f54d04f05c4e4a65ca53b1028d1207b" category="list-text">*删除NodeSSLCertificer*</block>
+  <block id="9b65a6a78c1794a21bc06b75e90962bb" category="inline-link-macro">RemoveNodeSSLCertificate方法</block>
+  <block id="54788257ab6665219d3b197c0c0ab2b3" category="paragraph">这 <block ref="7a6d88cb46fe8190180be6d3bbd02863" category="inline-link-macro-rx"></block> 删除当前安装的SSL证书和专用密钥。然后，集群将生成新的自签名证书和专用密钥。</block>
+  <block id="347d913828eec37c0c4915a8bd604f8a" category="list-text"><block ref="347d913828eec37c0c4915a8bd604f8a" category="inline-link-macro-rx"></block></block>
+  <block id="f056eadecebc58790da8eb91b5211492" category="inline-link">在Element Software中设置自定义SSL证书有哪些要求？</block>
+  <block id="e3b4df69e2fe4e8545e5e0240eada6a2" category="list-text"><block ref="e3b4df69e2fe4e8545e5e0240eada6a2" category="inline-link-rx"></block></block>
+  <block id="71d77d19e87db163a8fa4db90c83237d" category="inline-link-macro">GetSSLCertificate方法</block>
+  <block id="3e9585ef7d0edda1489dd7d9051efee2" category="paragraph">您可以使用 <block ref="785a154069def4382c407c46cd76511f" category="inline-link-macro-rx"></block> 检索有关当前安装的SSL证书的信息、包括所有证书详细信息。</block>
+  <block id="d071ee449f970ae83d3efc8c36fdd3db" category="inline-link-macro">SetSSLCertificate方法</block>
+  <block id="af9aeedb67a7383e9ed9027d9cae0347" category="paragraph">您可以使用 <block ref="77081d68df13899db5539e9bf47c2e76" category="inline-link-macro-rx"></block> 将集群和每节点SSL证书设置为您提供的证书和专用密钥。系统会验证证书和专用密钥，以防止应用无效证书。</block>
+  <block id="b3f80d8c01527878ecb6d9da0acbee6c" category="inline-link-macro">RemoveSSLCertificate方法</block>
+  <block id="a6c060b483d31ea611debe971d6648f2" category="paragraph">。 <block ref="0e7e722b98bf8cba65c74d44d6ffe2e6" category="inline-link-macro-rx"></block> 删除当前安装的SSL证书和专用密钥。然后，集群将生成新的自签名证书和专用密钥。</block>
+  <block id="b59339c29a0a5c439aaf31d01a32ea3a" category="list-text"><block ref="b59339c29a0a5c439aaf31d01a32ea3a" category="inline-link-macro-rx"></block></block>
+  <block id="54db42757b5d75d2f660dc70f35850cf" category="inline-link">vCenter插件5.1发行说明</block>
+  <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _new_</block>
+  <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
+  <block id="62bad8a6f2407b7cf1f98abe9ada3dae" category="admonition">使用API后、必须重新启动管理节点。</block>
 </blocks>
