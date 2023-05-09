@@ -1268,7 +1268,6 @@
   <block id="177512b9add0b40c38dad61838bf7d79" category="section-title">资产管理</block>
   <block id="e578d1edd1f3c874d49e1c9e76becbbc" category="list-text"><block ref="e578d1edd1f3c874d49e1c9e76becbbc" category="inline-link-macro-rx"></block></block>
   <block id="6740b5cf3dc8479800bac9edc86cd31a" category="inline-link-macro">使用 REST API 收集 Element 系统日志</block>
-  <block id="e6f552ff8b981823a09e603dcf005093" category="list-text"><block ref="e6f552ff8b981823a09e603dcf005093" category="inline-link-macro-rx"></block></block>
   <block id="c9676e9b030c94e7e828a060b343f3db" category="list-text"><block ref="c9676e9b030c94e7e828a060b343f3db" category="inline-link-macro-rx"></block></block>
   <block id="b8ce529cfc2b9255a783e211ddb57996" category="list-text"><block ref="b8ce529cfc2b9255a783e211ddb57996" category="inline-link-macro-rx"></block></block>
   <block id="0b9f382bf593a3a25e5173264b3e45f0" category="summary">您可以使用 REST API UI 将 NetApp Hybrid Cloud Control 配置为使用多个 vCenter 。</block>
@@ -1753,7 +1752,6 @@
   <block id="91e02cd2b8621d0c05197f645668c5c4" category="paragraph">网络</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="paragraph">不适用</block>
   <block id="d25b1313ce24472d1605226c513ef95a" category="paragraph">这会导致系统将数据从节点的驱动器迁移到集群中的其他驱动器。此过程所需时间取决于必须迁移的数据量。</block>
-  <block id="f450dc1f11b420ef61c997b620a5ddf3" category="inline-link-macro">更换 Dell R640 的驱动器</block>
   <block id="cef2ee48106a0a7790ec9a773798ee14" category="inline-link-macro">使用 Element 软件 UI 中的基本选项</block>
   <block id="feabbbf9b5afb31194daf0d8e3ff75dc" category="inline-link-macro">使用卷</block>
   <block id="661a6e0397d4dd97cf4921386753f84c" category="inline-link-macro">使用虚拟卷</block>
@@ -2869,7 +2867,6 @@
   <block id="cbf736cf2cf084245cf2ef853366ba11" category="paragraph">idpConfigInfo</block>
   <block id="c54f92fa106774d26ba461cc1c497aae" category="paragraph">有关第三方 IdP 配置的信息。</block>
   <block id="0c2fa1c0ffa320e7273124b77aabbd2b" category="inline-link-macro">idpConfigInfo</block>
-  <block id="a29f9fdde9669fd7ca1ae6b4127f82b8" category="paragraph"><block ref="9c26e58197dbaa39e74144e77ff06a0e" category="inline-link-macro-rx"></block> 数组</block>
   <block id="195863009ffa903e83ad7fd7e7db63b1" category="paragraph">12.0</block>
   <block id="fa2bf27789f0fe1397f3deffc7b58351" category="summary">您可以使用 GetLldpConfig 方法获取存储集群中每个节点的链路层发现协议（ Link Layer Discovery Protocol ， LLDP ）配置。</block>
   <block id="bf28260a9de577bfe685f146dfd88a6b" category="doc">GetLldpConfig</block>
@@ -2966,7 +2963,6 @@
   <block id="3b16867b7d374321cf9761a2d81e09bd" category="paragraph">您可以使用 `ListActiveAuthSessions` 方法列出所有经过身份验证的活动会话。只有具有管理访问权限的用户才能调用此方法。</block>
   <block id="bfe739376bae3a5336f58e3971531253" category="paragraph">身份验证会话的会话信息。</block>
   <block id="9a43554262146ce04817985e50c7f70c" category="inline-link-macro">authSessionInfo</block>
-  <block id="b1bff35225b1453efa974801b476caff" category="paragraph"><block ref="b1bff35225b1453efa974801b476caff" category="inline-link-macro-rx"></block></block>
   <block id="e87980629351383341485cfdfeb606cb" category="summary">NetApp 工程人员使用 GetRawStats API 方法测试新功能。从 GetRawStats 返回的数据不会进行记录，并且会频繁更改，并且无法保证其准确性。您不应使用 GetRawStats 收集性能数据或与运行 Element 软件的存储集群进行任何其他管理集成。</block>
   <block id="a73bc9a5a0fae468432503496b62e312" category="paragraph">NetApp 工程人员使用 `GetRawStats` API 方法测试新功能。从 `GetRawStats` 返回的数据不会进行记录，并且会频繁更改，并且无法保证其准确性。您不应使用 `GetRawStats` 来收集性能数据或与运行 Element 软件的存储集群进行任何其他管理集成。</block>
   <block id="9637eae4ee7bc2abe1d9f563adbcc5a0" category="paragraph">使用以下受支持的 API 方法检索统计信息：</block>
@@ -3083,7 +3079,6 @@
   <block id="d87a2a63d480d1602f49d51e523e44af" category="paragraph">要存储的 IdP 元数据。</block>
   <block id="a4926df300a1048acda1c427456917dd" category="paragraph">用于标识 SAML 2.0 单点登录的 IdP 提供程序的名称。</block>
   <block id="9b275bed2e2d0a90045fbe660777ccf3" category="paragraph">有关第三方身份提供程序（ IdP ）配置的信息。</block>
-  <block id="9c26e58197dbaa39e74144e77ff06a0e" category="paragraph"><block ref="9c26e58197dbaa39e74144e77ff06a0e" category="inline-link-macro-rx"></block></block>
   <block id="28d9275d84165bcfaf517fc9295daed7" category="summary">API 中使用三种类型的请求端点（存储集群，存储集群创建和每个节点）。您应始终使用您的 Element 软件版本支持的最新端点。</block>
   <block id="be44f93d7d9fb3d2c5ce921893855afd" category="doc">请求端点</block>
   <block id="b67a024bd682849c3714e5dfb9b7ec90" category="paragraph">API 中使用三种类型的请求端点（存储集群，存储集群创建和每个节点）。您应始终使用您的 Element 软件版本支持的最新端点。</block>
@@ -3498,7 +3493,6 @@
   <block id="fa086ddf62bedd344204fceb97eb97b1" category="paragraph">kmipKeyServer</block>
   <block id="86d9b0ecb31e3598bf29d711f80152ec" category="paragraph">包含有关新修改的密钥服务器的详细信息的对象。</block>
   <block id="64ce33c3af0564919d68824260f9d7c0" category="inline-link-macro">KeyServerKmip</block>
-  <block id="0971c717c82e5a2659fd8ee2d73d170d" category="paragraph"><block ref="0971c717c82e5a2659fd8ee2d73d170d" category="inline-link-macro-rx"></block></block>
   <block id="e57b956af31e98e7384b69e0e0cfc5a6" category="summary">您可以使用 UpdateBulkVolumeStatus 方法更新使用 StartBulkVolumeRead 或 StartBulkVolumeWrite 方法启动的批量卷作业的状态。</block>
   <block id="0cbc9b3eac70901cd08c76ae7fb284c1" category="paragraph">您可以使用 `UpdateBulkVolumeStatus` 方法更新使用 `STartBulkVolumeRead` 或 `STartBulkVolumeWrite` 方法启动的批量卷作业的状态。</block>
   <block id="793d0e43b349664cfa7cefddafcc4b57" category="paragraph">初始化期间分配的密钥 <block ref="9bb219cd6da4ef0df4e030d5d41c36e3" category="inline-xref-macro-rx"></block> 或 <block ref="436fc063b8d3f9dee672b110fe1b81a1" category="inline-xref-macro-rx"></block> 会话。</block>
@@ -3931,7 +3925,6 @@
   <block id="b140fd3c0111005bcfc14eb207c72b2d" category="paragraph">保护域</block>
   <block id="8182124863c7746cec9195a8d74456c3" category="paragraph">节点所属的保护域列表。</block>
   <block id="c6faecb3ce8f08fb0dfc3519050b8527" category="inline-link-macro">保护域</block>
-  <block id="4a7c9a0bc1a3ed41374850a08662f9a1" category="paragraph"><block ref="4a7c9a0bc1a3ed41374850a08662f9a1" category="inline-link-macro-rx"></block></block>
   <block id="486bc69230658e08ce12ba2d95da9e00" category="summary">Element 软件 Web UI 使用 QuiesceSnapMirrorRelationship 方法禁用 SnapMirror 关系的未来数据传输。如果正在进行传输，则关系状态将变为 "quiescing" ，直到传输完成为止。如果当前传输已中止，则不会重新启动。您可以使用 ResumeSnapMirrorRelationship API 方法为此关系重新启用数据传输。</block>
   <block id="b5f2b78953aa7cee09ffda3ec8b3be41" category="doc">QuiesceSnapMirrorRelationship</block>
   <block id="b0a8dcb84595b6fd40c5eb92018dc58f" category="paragraph">Element 软件 Web UI 使用 `QuiesceSnapMirrorRelationship` 方法禁用 SnapMirror 关系的未来数据传输。如果正在进行传输，则关系状态将变为 "quiescing" ，直到传输完成为止。如果当前传输已中止，则不会重新启动。您可以使用 `ResumeSnapMirrorRelationship` API 方法为此关系重新启用数据传输。</block>
@@ -4420,7 +4413,6 @@
   <block id="03ca6818409054c6f788f8f1512a9a83" category="paragraph">如果省略此参数，则不会根据是否已分配 KMIP 密钥提供程序对返回的 KMIP 密钥服务器进行筛选。</block>
   <block id="2c1426081603fa11f6ec5fe617919158" category="paragraph">kmipKeyServer</block>
   <block id="24fdfa87efc0bd3dccff05037bf0a5e8" category="paragraph">已创建的 KMIP 密钥服务器的完整列表。</block>
-  <block id="0a2a9e2ac4719c4ac6cdb0954649f468" category="paragraph"><block ref="0971c717c82e5a2659fd8ee2d73d170d" category="inline-link-macro-rx"></block> 数组</block>
   <block id="dc8e1ac2cbed3593426fc5ed056fe30f" category="summary">您可以使用 ListServices 方法列出节点，驱动器，当前软件以及集群上运行的其他服务的服务信息。</block>
   <block id="f87f240ad01adcfddd869079ea264ac0" category="paragraph">您可以使用 `ListServices` 方法列出集群上运行的节点，驱动器，当前软件和其他服务的服务信息。</block>
   <block id="10cd395cf71c18328c863c08e78f3fd0" category="paragraph">服务</block>
@@ -4868,7 +4860,6 @@
   <block id="c02c1eaada945237018f916bc8da84ad" category="paragraph">此方法没有输入参数。</block>
   <block id="78acf42d4e20f5f2468d1e65f57abf33" category="paragraph">保护域布局</block>
   <block id="05a5c63fcd5e41bcca1f51f811155ae8" category="paragraph">节点列表，每个节点及其关联的保护域。</block>
-  <block id="239e7b7fda84773161e54a846a2d1cd4" category="paragraph">JSON 列表 <block ref="900764c76dfb916163ee11006f145e7d" category="inline-link-macro-rx"></block> 对象。</block>
   <block id="7c17df20b03d4e07f2afa43f69f48864" category="summary">您可以使用 CopyVolume 方法将现有卷的数据内容覆盖为另一个卷的数据内容 \ （或 snapshot\ ）。目标卷的属性，例如 IQN ， QoS 设置，大小，帐户和卷访问组成员资格不会更改。目标卷必须已存在，并且大小必须与源卷相同。</block>
   <block id="825fdf7532e30c4cbf3dca22b2c62e9c" category="paragraph">您可以使用 `CopyVolume` 方法将现有卷的数据内容覆盖为另一个卷（或快照）的数据内容。目标卷的属性，例如 IQN ， QoS 设置，大小，帐户和卷访问组成员资格不会更改。目标卷必须已存在，并且大小必须与源卷相同。</block>
   <block id="35abaf19b268121e929df1ba58c67e4a" category="paragraph">最好是在操作开始之前，客户端卸载目标卷。如果在此操作期间修改了目标卷，所做的更改将丢失。完成此操作可能需要不同的时间。您可以使用 <block ref="2853137f7040863ca18b1480311d2902" category="inline-xref-macro-rx"></block> 用于确定进程何时完成的方法，和 <block ref="5bf2a4d1d336cc32b103ae2eace84bf1" category="inline-xref-macro-rx"></block> 以查看复制进度。</block>
@@ -5292,7 +5283,6 @@
   <block id="c398d0b5db2ad6bd0f494cea5b8f4088" category="paragraph">kmipKeyProvider</block>
   <block id="158fc117241750b333d9029fcd379a0b" category="paragraph">一个对象，其中包含有关新创建的密钥提供程序的详细信息。</block>
   <block id="af6fa3b56666058ff3f8eacb74577a16" category="inline-link-macro">KeyProviderKmip</block>
-  <block id="318d6ed2c493a66e91fc7d1db5a0f022" category="paragraph"><block ref="318d6ed2c493a66e91fc7d1db5a0f022" category="inline-link-macro-rx"></block></block>
   <block id="c30ff6c5fbeef539fbe50ceced3d3adb" category="summary">您可以使用 DisableMaintenanceMode 方法使存储节点退出维护模式。只有在完成维护且节点处于联机状态后，才应禁用维护模式。</block>
   <block id="378e5721fe469e91f2b09f34b8b43581" category="paragraph">您可以使用 `DisableMaintenanceMode` 方法将存储节点退出维护模式。只有在完成维护且节点处于联机状态后，才应禁用维护模式。</block>
   <block id="8ca0a895c8a8de3852bfe9bc2855eb91" category="paragraph">您可以使用 GetAsyncResult 方法检索此 asyncHandle 并确定维护模式过渡完成的时间。</block>
@@ -6113,7 +6103,6 @@
   <block id="315d01d864941b08b015bd9724f5b4e7" category="paragraph">如果省略此参数，则不会根据是否已分配 KMIP 密钥服务器对返回的 KMIP 密钥提供程序进行筛选。</block>
   <block id="2d956871963e704854b5e24781df3ac6" category="paragraph">kmipKeyProviders</block>
   <block id="daed31255d43e1a9cb8957ea4827280f" category="paragraph">已创建的 KMIP 密钥提供程序的列表。</block>
-  <block id="9e1dc08162fd6287c4fb2fdc4c4a9a0f" category="paragraph"><block ref="318d6ed2c493a66e91fc7d1db5a0f022" category="inline-link-macro-rx"></block> 数组</block>
   <block id="d07ccd2d77f5001f167b3b44147d3a36" category="summary">您可以使用 GetRemoteLoggingHosts 方法获取日志服务器的当前列表。</block>
   <block id="d181f64248152c2f348f049cf48ef93e" category="paragraph">您可以使用 `GetRemoteLoggingHosts` 方法获取日志服务器的当前列表。</block>
   <block id="5f4f0ec0918e318616593eade2ab0e45" category="paragraph">远程主机</block>
@@ -6131,9 +6120,7 @@
   <block id="f7fbdcd0f959ea03f9c9fe10c1f436f5" category="paragraph">您可以使用 `EnableEncryptionAtRest` 方法在集群上启用高级加密标准（ Advanced Encryption Standard ， AES ） 256 位空闲加密，以便集群可以管理用于每个节点上的驱动器的加密密钥。默认情况下，不会启用此功能。</block>
   <block id="b6da302462725db65b08725e21534c35" category="inline-link-macro">获取集群信息方法</block>
   <block id="df55ce8d5994202037ca7f6b8add22fc" category="inline-link-macro">获取集群用于对空闲数据进行加密的信息的方法</block>
-  <block id="8645b3842f2ebbd31ef1556eca13e734" category="admonition">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="266af3c6722606b03dffbc748cf8f335" category="inline-link-macro-rx"></block>。您可以使用 `GetSoftwareEncryptionAtRestInfo` <block ref="71cd4d0c7a8355e8bd1074b7039cdde9" category="inline-link-macro-rx"></block>。</block>
   <block id="9a3e77d40a36fc6582491b29c79ad64a" category="inline-link-macro">创建集群方法</block>
-  <block id="54345a69ac071e42416d101550699426" category="admonition">此方法不会启用空闲软件加密。只能使用完成此操作 <block ref="156163f61ad8e976859b5234666eb7c2" category="inline-link-macro-rx"></block> 使用 `enableSoftwareEncryptionAtRest` 设置为 `true` 。</block>
   <block id="79c6818b5a784bd2a9784bba4752ebda" category="paragraph">启用空闲加密后，集群会自动在内部管理集群中每个节点上的驱动器的加密密钥。</block>
   <block id="06dd8c5540d025434b69c38d303f3e8a" category="paragraph">如果指定了 keyProviderID ，则会根据密钥提供程序的类型生成和检索密码。对于 KMIP 密钥提供程序，通常使用密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）密钥服务器来完成此操作。执行此操作后，指定的提供程序将被视为活动提供程序，并且无法删除，直到使用 `DisableEncryptionAtRest` 方法禁用空闲加密为止。</block>
   <block id="0a78a222fd5e48d5331001cedecde88d" category="admonition">如果您的节点类型的型号以 "-NE" 结尾，则 `EnableEncryptionAtRest` 方法调用将失败，并显示响应 " 不允许加密 " 。集群检测到不可加密的节点 " 。</block>
@@ -7852,9 +7839,7 @@
   <block id="829222e37a81e6723ec1c8312f0896ff" category="doc">适用于 SolidFire 全闪存存储的管理服务</block>
   <block id="83221d7a8e6873bb96d6fbbd9afcf8e8" category="inline-link-macro">管理节点</block>
   <block id="a818b18784f90669084d24af8a7d4d6b" category="paragraph">从 Element 11.3 版开始， * 管理服务 * 托管在上 <block ref="5faa37a8cb9b8f7bb17a5a6af86182c8" category="inline-link-macro-rx"></block>，可以在主要版本之外更快地更新选定的软件服务。</block>
-  <block id="33613f9e26b4d3202f0d812df6bedba3" category="paragraph">管理服务可为 SolidFire 全闪存存储提供集中式和扩展式管理功能。这些服务包括 <block ref="53cac838271c3c6f19adc6b835ed9d5f" category="inline-link-macro-rx"></block>， Active IQ 系统遥测，日志记录和服务更新以及适用于 vCenter 的 Element 插件的 QoSSIOC 服务。</block>
   <block id="257409197ae1a07404e333be63986ac6" category="inline-link-macro">管理服务版本</block>
-  <block id="4651d824b0048b0eb592cc60e9dd3977" category="admonition">了解更多信息 <block ref="873adfb4e707b3b5ed2423771a9400e1" category="inline-link-macro-rx"></block>。</block>
   <block id="e2593695976e95f81a24db98be39ed45" category="summary">SolidFire 全闪存存储系统由独立的硬件组件（驱动器和节点）组成，这些组件通过在每个节点上独立运行的 NetApp Element 软件组合到一个存储资源池中。此统一集群可作为一个存储系统提供给外部客户端使用，并通过 Element 软件 UI ， API 和其他管理工具作为一个实体进行管理。</block>
   <block id="03531bbe6b454e3015b4001ed6ef7590" category="paragraph">SolidFire 全闪存存储系统由多个独立的硬件组件（驱动器和节点）组成，这些组件组合成一个存储资源池，并在每个节点上独立运行 NetApp Element 软件。此单个存储系统可通过 Element 软件 UI ， API 和其他管理工具作为一个实体进行管理。</block>
   <block id="91d2228a1dd7c829ac2836205775867a" category="paragraph">SolidFire 存储系统包括以下硬件组件：</block>
@@ -7959,11 +7944,6 @@
   <block id="893da6ab703ccebc0128c2188fce2dfa" category="section-title">改进了故障驱动器的行为</block>
   <block id="bc8064d6976a4ae417d9071be509d014" category="paragraph">Element 12.3 使用 SolidFire 设备驱动器中的 SMART 运行状况数据对这些驱动器定期执行运行状况检查。未通过智能运行状况检查的驱动器可能接近故障。如果某个驱动器未通过智能运行状况检查，则该驱动器将过渡到 * 故障 * 状态，并显示严重严重性集群故障： `d" 驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器驱动器运行状况检查失败 " 。要解决此故障，请更换驱动器。`</block>
   <block id="f27e588d7a898f97a40bb017bc0cb67e" category="paragraph">SolidFire ESDS 现在可在 Dell R640 服务器上使用。请参见<block ref="bbf12a00ac2004a394e4a5957119453c" category="inline-link-rx"></block> 有关支持的配置的详细信息。</block>
-  <block id="b4eb0a7d2f620a735a49d295cf464c57" category="section-title">SolidFire ESDS 的新文档</block>
-  <block id="7b23dd0b7e8640cee7cc760aebda33b4" category="paragraph">SolidFire ESDS 提供了以下新文档：</block>
-  <block id="0758acb395116abd9e0939201a27edd6" category="list-text"><block ref="cf3efad461dedbcc789786816f0318a6" category="inline-link-rx"></block>：提供了更换 Dell R640 服务器中的驱动器的步骤。</block>
-  <block id="5ecc3fdf34ca55d0377ecf551fdb9635" category="inline-link">知识库文章（需要登录）</block>
-  <block id="4b88ce6903140a7f757c6509c06012dc" category="list-text"><block ref="a047a2b1ef295d12a54302870ed64e97" category="inline-link-rx"></block>：提供有关对 SolidFire ESDS 系统问题进行故障排除的信息。</block>
   <block id="295216d6678c57d5badf5770238d96b5" category="section-title">SolidFire ESDS 已知问题的新位置</block>
   <block id="4a5792ce9d744e9fb996d5cbb1e303d8" category="inline-link">Bug Online 工具（需要登录）</block>
   <block id="28bab3e7358cc261a7101ba6a439e4eb" category="paragraph">现在，您可以在上搜索已知问题<block ref="4010019de5d8f9d6e5f30f9d5509ab8d" category="inline-link-rx"></block>。</block>
@@ -8089,7 +8069,6 @@
   <block id="c8de9bc8a027f0e5864fb603489b44fd" category="list-text"><block ref="c8de9bc8a027f0e5864fb603489b44fd" category="inline-link-rx"></block></block>
   <block id="a0b768ade98ef6cf3df956008c966806" category="list-text"><block ref="a0b768ade98ef6cf3df956008c966806" category="inline-link-rx"></block></block>
   <block id="af149d844cc5e37dba5faa0cc28a9285" category="inline-link-macro">H610S BMC 3.84.07 发行说明</block>
-  <block id="eead60ae6beeaad1ec995f62a611e1c3" category="list-text"><block ref="eead60ae6beeaad1ec995f62a611e1c3" category="inline-link-macro-rx"></block></block>
   <block id="f1d02ef71e655f874094154fe26955ae" category="summary">集群是 SolidFire 存储系统的中心，由一组节点组成。要实现 SolidFire 存储效率，集群中必须至少有四个节点。集群在网络上显示为一个逻辑组，然后可作为块存储访问。</block>
   <block id="c31f538ab7ed22954b3c941becbca20b" category="paragraph">创建新集群会将节点初始化为集群的通信所有者，并为集群中的每个节点建立网络通信。此过程仅对每个新集群执行一次。您可以使用 Element UI 或 API 创建集群。</block>
   <block id="01a99de421fb8a821f16fedb65844d3e" category="paragraph">您可以通过添加其他节点横向扩展集群。添加新节点时，服务不会中断，集群会自动使用新节点的性能和容量。</block>
@@ -8366,7 +8345,6 @@
   <block id="94d1207223d97d0a0a9877e887c40d29" category="inline-link-macro">更改默认 IPMI 密码</block>
   <block id="a88b2ec4dd01d7fd61509f9c9d5bd481" category="list-text">对于 H410C ， H610C 和 H615C 节点， <block ref="1d4aa273a0eca9d7d120f38c4573165c" category="inline-link-macro-rx"></block>。</block>
   <block id="9ef4592bcb5c2379e3e631deeae02163" category="inline-link-macro">更改默认 IPM 密码</block>
-  <block id="c406ac81de66b241c8b18e8b786204ce" category="list-text">对于 H410S 和 H610S 节点， <block ref="948675b0a3c0cef9123c5f0ab6b48101" category="inline-link-macro-rx"></block>。</block>
   <block id="5da96725b80167a4658f4e9057a4cb45" category="inline-link-macro">更改管理节点上的 BMC 凭据</block>
   <block id="57137c1e68d7300587dc9d9e4c6d107c" category="list-text"><block ref="5215e9d1d5c62231ce2eff57e0d99e18" category="inline-link-macro-rx"></block>。</block>
   <block id="409517b29e406b86b0f2e96d825034ac" category="paragraph">ESXi 凭据</block>
@@ -9424,7 +9402,6 @@
   <block id="250f00e8767222db89298f946f97e517" category="paragraph">软件界面基于 Element API 构建。</block>
   <block id="9767ec22fca2804b6bdbd87e39200375" category="list-text"><block ref="9767ec22fca2804b6bdbd87e39200375" category="inline-link-macro-rx"></block></block>
   <block id="d3daac97e8c69781f73bcc5512cb5c2a" category="inline-link-macro">升级存储系统组件</block>
-  <block id="ecb20e3ca51440136d042527b042c2ee" category="list-text"><block ref="ecb20e3ca51440136d042527b042c2ee" category="inline-link-macro-rx"></block></block>
   <block id="6038a645307a76874f058ffe322fc4f6" category="list-text"><block ref="6038a645307a76874f058ffe322fc4f6" category="inline-link-macro-rx"></block></block>
   <block id="78b427ddfeadab92101bce0e26d2af15" category="list-text"><block ref="78b427ddfeadab92101bce0e26d2af15" category="inline-link-macro-rx"></block></block>
   <block id="b1d9f91038721e8f8e298ac364db6778" category="list-text"><block ref="b1d9f91038721e8f8e298ac364db6778" category="inline-link-macro-rx"></block></block>
@@ -9667,7 +9644,6 @@
   <block id="53661c1451a20d47537b1d0a00b2d7d0" category="list-text">要查看页面上所有警报的详细信息，请单击详细信息列。</block>
   <block id="17597d1694bdaa4d0233e43918f0bd33" category="paragraph">系统解决警报后，有关警报的所有信息（包括警报解决日期）将移至 "Resolved" （已解决）区域。</block>
   <block id="dc679f38ed2d35dde42b872d737e46db" category="list-text"><block ref="dc679f38ed2d35dde42b872d737e46db" category="inline-xref-macro-rx"></block></block>
-  <block id="8e078db9f02bd406ca631ba2825dd629" category="list-text"><block ref="8e078db9f02bd406ca631ba2825dd629" category="inline-link-macro-rx"></block></block>
   <block id="e1f86a5a716d7daf38cbb4414809333f" category="summary">您可以使用一个集群的 MVIP 与另一个集群建立连接，从而将两个集群配对以实现实时复制。要使用此方法，需要对两个集群都具有集群管理员访问权限。集群管理员用户名和密码用于在集群配对之前对集群访问进行身份验证。</block>
   <block id="686d2c92d6ed72fd9b67b053a374b0be" category="list-text">单击 * 开始配对 * ，然后单击 * 是 * 以指示您有权访问远程集群。</block>
   <block id="6b3a7de325b16dd1afda64f2b5d849aa" category="list-text">输入远程集群 MVIP 地址。</block>
@@ -9923,7 +9899,6 @@
   <block id="28ebc10ef7c343a4cf32aacf144f1590" category="list-text">对于基于硬件的空闲加密，在更改加密设置之前，您已确保集群处于运行状况良好的状态。</block>
   <block id="53f1251f9f4067bb924700bbc4f4734a" category="list-text">如果要禁用加密，则集群中必须有两个节点，才能访问密钥以禁用驱动器上的加密。</block>
   <block id="c7f9a749a25add142f440b6abf05f6c6" category="section-title">检查空闲时加密状态</block>
-  <block id="cafb235222dece370f504ef5d0d47b47" category="paragraph">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="b94a2f1f88f1b2af0f1632fc6ab0d549" category="inline-link-macro-rx"></block> 方法您可以使用 <block ref="599a2456b2fb227210a4ba9b77591706" category="inline-link-macro-rx"></block> 获取集群用于对空闲数据进行加密的信息的方法。</block>
   <block id="189f9cc5227158e41b6756a4618d70a5" category="admonition">`https://&lt;MVIP&gt;/` 上的 Element 软件 UI 信息板当前仅显示基于硬件的加密的空闲加密状态。</block>
   <block id="6411cb076f9a57f4692e35353d26818b" category="list-text"><block ref="0536a180f702fe272c8546e4728d45b2" category="inline-xref-macro-rx"></block></block>
   <block id="4823ade0859e69629fa1e8f164c00d7d" category="list-text"><block ref="a4d311b39c82c29e83b2f7086c1e3a91" category="inline-xref-macro-rx"></block></block>
@@ -10812,8 +10787,6 @@
   <block id="e3ba29915abd7b6580d69f4dab5a9180" category="list-text"><block ref="e3ba29915abd7b6580d69f4dab5a9180" category="inline-link-rx"></block></block>
   <block id="6a5872631c0cf8f8396f83702a5d1b69" category="inline-link">更换 H600S 系列存储节点的驱动器</block>
   <block id="958c4b86b435f9f588d64cfab02d9a5d" category="list-text"><block ref="958c4b86b435f9f588d64cfab02d9a5d" category="inline-link-rx"></block></block>
-  <block id="24ed1c3d2fd5e7a8e8358705c065eee8" category="list-text"><block ref="24ed1c3d2fd5e7a8e8358705c065eee8" category="inline-link-macro-rx"></block></block>
-  <block id="f938a270ef0dee1673d32b1160f2268d" category="list-text"><block ref="f938a270ef0dee1673d32b1160f2268d" category="inline-link-macro-rx"></block></block>
   <block id="b4de17ead867a3cf0b9d11e57e562672" category="doc">机器翻译</block>
   <block id="3c9f6e4a3154e230010cc09eb27260ad" category="summary">节点是指分组到集群中并作为块存储访问的各个硬件组件。SolidFire 存储系统中有两种类型的节点：存储节点和光纤通道节点。</block>
   <block id="a5599a81e172ea6d5e660325bbceb5b2" category="paragraph">创建新集群会将节点初始化为集群的通信所有者，并为集群中的每个节点建立网络通信。此过程仅对每个新集群执行一次。您可以使用 Element UI 或 API 创建集群。</block>
@@ -11302,8 +11275,6 @@
   <block id="4e8b9c52e60070f73bcaa6e5e5ba4121" category="inline-link-macro">LDAP 详细信息</block>
   <block id="543e9c1cf295e8284006e3af49b8105a" category="paragraph"><block ref="543e9c1cf295e8284006e3af49b8105a" category="inline-link-macro-rx"></block></block>
   <block id="d33f2a600ba4fe43084a26e95e4908c0" category="paragraph">* 相关信息 *</block>
-  <block id="a1245e096ef503d7567667afaa906b60" category="paragraph"><block ref="a1245e096ef503d7567667afaa906b60" category="inline-xref-macro-rx"></block></block>
-  <block id="52dc765a830c6c6b29cc239ca9482774" category="paragraph"><block ref="52dc765a830c6c6b29cc239ca9482774" category="inline-xref-macro-rx"></block></block>
   <block id="27b50c2855e5935b991c110f8f2c985d" category="summary">您可以通过将启动程序映射到一组卷来创建卷访问组，以实现安全访问。然后，您可以使用帐户 CHAP 启动程序密钥和目标密钥授予对组中卷的访问权限。</block>
   <block id="625674c07781dca113f6cbca1243747b" category="list-text">通过以下方式之一将启动程序添加到卷访问组：</block>
   <block id="f5121697b915ee3ca78973d2b9ab5038" category="paragraph">添加光纤通道启动程序</block>
@@ -11950,4 +11921,27 @@
   <block id="61ad36f15eb6ab7927cdc50f6e089a98" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block> _new_</block>
   <block id="0e051271241f0648ba45a8ad135d030c" category="list-text"><block ref="0e051271241f0648ba45a8ad135d030c" category="inline-link-rx"></block></block>
   <block id="62bad8a6f2407b7cf1f98abe9ada3dae" category="admonition">使用API后、必须重新启动管理节点。</block>
+  <block id="f2803c84f404a81af41a23542245cebc" category="paragraph"><block ref="f2803c84f404a81af41a23542245cebc" category="inline-link-macro-rx"></block></block>
+  <block id="64d9e8809f33aaca7cda9d121b2b2e83" category="paragraph"><block ref="64d9e8809f33aaca7cda9d121b2b2e83" category="inline-link-macro-rx"></block></block>
+  <block id="19f47154ff3c9f0fcf8147cd2369d029" category="paragraph"><block ref="19f47154ff3c9f0fcf8147cd2369d029" category="inline-link-macro-rx"></block></block>
+  <block id="0e9706d9713372bb21a3b9f917953dbc" category="paragraph">JSON 列表 <block ref="5820461afa2bd9ee99130d755eddf7ff" category="inline-link-macro-rx"></block> 对象。</block>
+  <block id="1e924e133c06d37b8d10cb78b719f4ce" category="paragraph"><block ref="1e924e133c06d37b8d10cb78b719f4ce" category="inline-link-macro-rx"></block></block>
+  <block id="0aa7fde71cfb5413015e45fa45075fd0" category="admonition">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="d274ae55f8f22fd98ab9b057453f6128" category="inline-link-macro-rx"></block>。您可以使用<block ref="2132cae62c1d77dfa3dd7c3447c77cf5" prefix=" " category="inline-code"></block> <block ref="bd5bc3e1755ad5880958398f3551c67d" category="inline-link-macro-rx"></block>。</block>
+  <block id="08e683c68442f500782b3d5486530a71" category="admonition">此方法不会启用空闲软件加密。只能使用完成此操作 <block ref="d203a09ebf9d1da1010b557da816049a" category="inline-link-macro-rx"></block> 使用<block ref="8a6d1a92159080729def71f4e50f41d0" prefix=" " category="inline-code"></block> 设置为<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>。</block>
+  <block id="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block></block>
+  <block id="954e95e0241c7b3a74f9c6a194795355" category="admonition">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="51ab6f075e7b9b2d3276f61c0b11b186" category="inline-link-macro-rx"></block>。您可以使用<block ref="2132cae62c1d77dfa3dd7c3447c77cf5" prefix=" " category="inline-code"></block> <block ref="e5fb14b37e1fdc8a835f7ed4e33c1c63" category="inline-link-macro-rx"></block>。</block>
+  <block id="342c0e2d839abf3902ec2e2ba9a391e5" category="paragraph"><block ref="19f47154ff3c9f0fcf8147cd2369d029" category="inline-link-macro-rx"></block> 数组</block>
+  <block id="f1e1734ea4e6ef5a6bd73e15cffa128a" category="paragraph"><block ref="f2803c84f404a81af41a23542245cebc" category="inline-link-macro-rx"></block> 数组</block>
+  <block id="2896bd9b7f534d42f996fc5910e2ad40" category="paragraph"><block ref="ddaca3871ebb2bf3f0b1cb11f4c6a4ea" category="inline-link-macro-rx"></block> 数组</block>
+  <block id="89291581fd8be1d9caf505e74fd0773e" category="list-text"><block ref="89291581fd8be1d9caf505e74fd0773e" category="inline-link-macro-rx"></block></block>
+  <block id="a339aaae279fb4166b4ea4a6575b8e54" category="list-text"><block ref="a339aaae279fb4166b4ea4a6575b8e54" category="inline-link-macro-rx"></block></block>
+  <block id="bc392d110b36a51cd536073024a5f532" category="list-text">对于 H410S 和 H610S 节点， <block ref="1ed294287e7a2515c794c51e2936136d" category="inline-link-macro-rx"></block>。</block>
+  <block id="dcf69453f88a169ec3e3e6fae67d435e" category="list-text"><block ref="dcf69453f88a169ec3e3e6fae67d435e" category="inline-link-macro-rx"></block></block>
+  <block id="07e6fbc1d94748a67b7280d5169aff78" category="paragraph">要查看集群上的空闲加密和 / 或空闲软件加密的当前状态，请使用 <block ref="4ba6dd2d59030fb9ee4b6523df69086c" category="inline-link-macro-rx"></block> 方法您可以使用 <block ref="6a83460526e11b52e54477d344b49b7d" category="inline-link-macro-rx"></block> 获取集群用于对空闲数据进行加密的信息的方法。</block>
+  <block id="521e8e8587c418fa92f54811f8954007" category="list-text"><block ref="521e8e8587c418fa92f54811f8954007" category="inline-link-macro-rx"></block></block>
+  <block id="ecec8bb5649856a856a861a75e4daa84" category="list-text"><block ref="ecec8bb5649856a856a861a75e4daa84" category="inline-link-macro-rx"></block></block>
+  <block id="24786d5c66286f468be80b26d8f4126b" category="list-text"><block ref="24786d5c66286f468be80b26d8f4126b" category="inline-link-rx"></block></block>
+  <block id="08bedb070b17681cfbba927034b3d77e" category="paragraph">管理服务可为 SolidFire 全闪存存储提供集中式和扩展式管理功能。这些服务包括 <block ref="c33469c22ade8b91ea5a2e4b6de19fdf" category="inline-link-macro-rx"></block>， Active IQ 系统遥测，日志记录和服务更新以及适用于 vCenter 的 Element 插件的 QoSSIOC 服务。</block>
+  <block id="afb54c94a5e9aef322532eabe176c2d4" category="admonition">了解更多信息 <block ref="8a1a0a32384afdd6d93db2e7c4f512ad" category="inline-link-macro-rx"></block>。</block>
+  <block id="4fff24ec2d2b11f3a503f7b0abacb1cb" category="list-text"><block ref="4fff24ec2d2b11f3a503f7b0abacb1cb" category="inline-link-macro-rx"></block></block>
 </blocks>
