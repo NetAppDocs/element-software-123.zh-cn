@@ -11944,4 +11944,6 @@
   <block id="08bedb070b17681cfbba927034b3d77e" category="paragraph">管理服务可为 SolidFire 全闪存存储提供集中式和扩展式管理功能。这些服务包括 <block ref="c33469c22ade8b91ea5a2e4b6de19fdf" category="inline-link-macro-rx"></block>， Active IQ 系统遥测，日志记录和服务更新以及适用于 vCenter 的 Element 插件的 QoSSIOC 服务。</block>
   <block id="afb54c94a5e9aef322532eabe176c2d4" category="admonition">了解更多信息 <block ref="8a1a0a32384afdd6d93db2e7c4f512ad" category="inline-link-macro-rx"></block>。</block>
   <block id="4fff24ec2d2b11f3a503f7b0abacb1cb" category="list-text"><block ref="4fff24ec2d2b11f3a503f7b0abacb1cb" category="inline-link-macro-rx"></block></block>
+  <block id="a6d7169168a038dee7aae0a8f455c43a" category="list-text">如果正在执行分区同步、则将卷回滚到快照可能会失败。重试<block ref="c2e5bace81fd03914fa15aa027ee5f09" prefix=" " category="inline-code"></block> 同步完成后。</block>
+  <block id="bd74837c55aafce98fe5823bae9ee413" category="list-text">如果正在执行分区同步、则将卷回滚到组快照可能会失败。重试<block ref="05667fca9ff503d9b750747f0075d35a" prefix=" " category="inline-code"></block> 同步完成后。</block>
 </blocks>
