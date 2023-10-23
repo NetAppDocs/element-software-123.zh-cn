@@ -805,7 +805,6 @@
   <block id="4c3549801952dfbbac7a8729ddb71778" category="list-text">按正面的电源按钮打开机箱电源。节点启动大约需要 5 分 30 秒。</block>
   <block id="7fcdd8ade61a6eaaf6d114269e40d93b" category="list-text">执行配置步骤。</block>
   <block id="c6ad545ed5197a02a4f86759e091d934" category="summary">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。作为一个存储系统，此统一集群使用 NetApp Element 软件进行管理。</block>
-  <block id="feaccfca658600b99fd01ee647d128a7" category="doc">SolidFire 和 Element 软件 12.3.x 文档</block>
   <block id="37bf500e2e9e1010fbba8f9d57fc6653" category="summary">如果您未运行最新版本，可以参考先前版本的文档。</block>
   <block id="516f6af28c516e78fc33b4c052dabe39" category="doc">早期版本的 SolidFire 和 NetApp Element 软件文档</block>
   <block id="f20c99cda6c5c700e6ea170eaea46329" category="inline-link">Element 12.2 文档</block>
@@ -11393,7 +11392,6 @@
   <block id="4c46c9acea33f3a7201c692e8d84806b" category="sidebar">管理支持连接</block>
   <block id="f3ef8562bc46b3fd5d64fc8a88bab6f9" category="sidebar">安装 H410S 和 H610S 节点</block>
   <block id="e558a93d8af634916bae37b7136be1d2" category="sidebar">GetSoftwareEncryptionatRestInfo</block>
-  <block id="0156654ae4dc6b09e871c56632755132" category="sidebar">升级适用于 Element 12.3.x 的 NetApp SolidFire 全闪存存储系统</block>
   <block id="b837bae0f441ebacd86887d737939282" category="sidebar">系统升级过程</block>
   <block id="9282ad3aef7e124a3b2b9c7eab52b33d" category="sidebar">架构和组件</block>
   <block id="53b2a4dd7325c2d7325f310860b0b55f" category="sidebar">用于多因素身份验证的追加信息</block>
@@ -11943,4 +11941,5 @@
   <block id="86eccd8202a873aee7f9acfbe920bb59" category="paragraph"><block ref="00a55ff76496c3c45ca20071f6151bfc" prefix="" category="inline-code"></block></block>
   <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">适用于vCenter 5.0或更高版本的Element插件与vCenter Server 6.7和6.5不兼容。</block>
   <block id="dfd25ff244b001be7beece9729517779" category="list-text">未压缩</block>
+  <block id="da610458ca77f95bd33552584272f2c8" category="sidebar">升级NetApp SolidFire全闪存存储系统Element 12.3.x版</block>
 </blocks>
