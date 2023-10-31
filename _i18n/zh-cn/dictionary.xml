@@ -9104,8 +9104,6 @@
   <block id="5421fac2401eb19c9cb0e5aab1e0fb46" category="list-text">使用 Element API 输入以下命令，在所有驱动器上启用 FIPS ：</block>
   <block id="9f75394f7e7400c6bd1811b84f367045" category="paragraph">`EnableFeature 参数： FipsDrives`</block>
   <block id="ff888c386cbf7561a41674237043ab02" category="summary">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
-  <block id="bbb9ca100f5b4a2074b8caeaaf4b1ae0" category="paragraph">您可能需要允许以下 TCP 端口通过数据中心的边缘防火墙，以便可以远程管理系统并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
-  <block id="2f5dc9e1194b10f0920c3f6b85205b99" category="paragraph">除非另有说明，否则所有端口均为 TCP 端口，并且应允许在 NetApp 支持服务器，管理节点和运行 Element 软件的节点之间进行双向通信。</block>
   <block id="1f2681a91e9e795d6ebb1d5828cd1182" category="admonition">在管理节点，运行 Element 软件的节点和集群 MVIP 之间启用 ICMP 。</block>
   <block id="15a1051d03ca55ab79226f44fa683bbe" category="paragraph">下表使用了以下缩写词：</block>
   <block id="60175d30ed8f8459b2f835b923bb4ee5" category="list-text">mip ：管理 IP 地址，每节点地址</block>
@@ -11942,4 +11940,6 @@
   <block id="474ed7ffbbc0fc1d58ad983e7ef700f6" category="admonition">适用于vCenter 5.0或更高版本的Element插件与vCenter Server 6.7和6.5不兼容。</block>
   <block id="dfd25ff244b001be7beece9729517779" category="list-text">未压缩</block>
   <block id="da610458ca77f95bd33552584272f2c8" category="sidebar">升级NetApp SolidFire全闪存存储系统Element 12.3.x版</block>
+  <block id="c04c3f3380a29245247f6e8a6c77a880" category="paragraph">您可能需要允许以下TCP和UDP端口通过数据中心的边缘防火墙、以便可以远程管理系统、并允许数据中心外部的客户端连接到资源。其中某些端口可能不是必需的，具体取决于您使用系统的方式。</block>
+  <block id="331d6d490990c63b2cee0dc04fe2589b" category="paragraph">除非另有说明、否则所有端口均为TCP端口、并且所有TCP端口都必须支持NetApp支持服务器、管理节点和运行Element软件的节点之间的三次握手通信。例如、管理节点源上的主机通过TCP端口443与存储集群MVIP目标上的主机进行通信、而目标主机则通过任何端口与源主机进行通信。</block>
 </blocks>
