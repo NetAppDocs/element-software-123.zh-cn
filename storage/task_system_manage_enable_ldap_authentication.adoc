@@ -34,7 +34,7 @@ NOTE: 也可以输入可选的自定义端口号。
 link:reference_system_manage_ldap_details.md#["LDAP 详细信息"]
 
 +
-image::../media/element_new_ldap_servers.jpg[添加新的 LDAP 服务器]
+image::../media/element_new_ldap_servers.jpg[LDAP服务器的常规设置视图]
 
 . 单击 * 启用 LDAP* 。
 . 如果要测试用户的服务器访问权限，请单击 * 测试用户身份验证 * 。
@@ -44,7 +44,7 @@ image::../media/element_new_ldap_servers.jpg[添加新的 LDAP 服务器]
 +
 .. 单击 * 用户 * > * 查看 * 。
 +
-image::../media/element_new_cluster_admin.jpg[Element 新集群管理员]
+image::../media/element_new_cluster_admin.jpg[创建新的用户视图]
 
 .. 对于新用户，单击 "User Type" （用户类型）中的 "* ldap* " ，然后将您复制的组粘贴到 "Distinguished Name" （可分辨名称）字段中。
 .. 选择权限，通常为所有权限。
