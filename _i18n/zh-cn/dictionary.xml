@@ -11940,4 +11940,6 @@
   <block id="e6344f017ebc6c23de294cbd0c5b3ec0" category="image-alt">LDAP服务器的常规设置视图</block>
   <block id="bf0a897972fda4244e862fc7b7474446" category="image-alt">创建新的用户视图</block>
   <block id="f4029885f6f8ac69ff0c61a3a67af4dc" category="sidebar">SolidFire 全闪存存储系统由多个硬件组件组成，例如驱动器和节点，这些硬件组件会组合到一个存储资源池中。您可以使用Element界面、API或其他管理工具通过NetApp Element软件管理这些存储资源集群。此站点包含Element软件12.3.x的文档</block>
+  <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由于升级软件包上传错误、SolidFire和HCI升级无法启动</block>
+  <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="admonition">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
 </blocks>
