@@ -11921,11 +11921,9 @@
   <block id="9de5606ae9b23ff6651244b85bd5dae8" category="list-text"><block ref="9de5606ae9b23ff6651244b85bd5dae8" category="inline-link-rx"></block></block>
   <block id="5ed2b0be7714cf9bfe94c6d0660549bb" category="list-text"><block ref="5ed2b0be7714cf9bfe94c6d0660549bb" category="inline-link-rx"></block></block>
   <block id="ce397f79b5032c3e327db3efe5a6048a" category="inline-link">vCenter插件5.2发行说明</block>
-  <block id="4718467fa890cd0dcf159b3d461cedbe" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block> _new_</block>
   <block id="410ecb079e286058eeb2bc6b56d9379c" category="list-text"><block ref="410ecb079e286058eeb2bc6b56d9379c" category="inline-link-rx"></block></block>
   <block id="faf6c38631911f7840c3498b4ec9f746" category="inline-link-macro">管理服务2.24.40通知(适用于VMware vCenter Server 5.2.12的NetApp Element插件)</block>
   <block id="db3a980db6ffcc2055052c6c4a453020" category="list-text"><block ref="db3a980db6ffcc2055052c6c4a453020" category="inline-link-macro-rx"></block></block>
-  <block id="eea7cb3a63edf642e1f15162351dfce7" category="list-text">您正在升级到适用于vCenter Server 5.2、5.1或5.0的Element插件。</block>
   <block id="c9c6a2f6fa07c1f8c580586914c37e79" category="image-alt">描述了成功升级或安装Element插件5.1或更高版本后的插件扩展点</block>
   <block id="f35f89119a6374d18bd89e0103590c61" category="image-alt">描述了成功升级或安装Element插件4.10或更早版本后的插件扩展点</block>
   <block id="1583ff28675a9e24a50fa1079a5dd985" category="paragraph"><block ref="43638993383f845bcd8925bd4e266bc9" prefix="" category="inline-code"></block></block>
@@ -11942,4 +11940,10 @@
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">由于升级软件包上传错误、SolidFire和HCI升级无法启动</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="admonition">从2023年11月开始、您无法使用NetApp混合云控制或REST API启动组件升级、因为签名密钥证书(私有和公共)已于2023年11月5日到期。您可以按照知识库文章中介绍的临时解决策来解决此问题描述<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>。</block>
   <block id="9f94ad22fed97f22703d9d145f565bfb" category="paragraph">您可以使用<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 主动删除集群中的驱动器的方法。在减少集群容量或准备更换接近使用寿命的驱动器时，您可以使用此方法。<block ref="e7d385ef5ac889916654bf5f865952f1" prefix=" " category="inline-code"></block> 在集群中的其他节点上创建块数据的第三个副本、并等待同步完成、然后再将驱动器移至"可用"列表。"Available (可用)"列表中的驱动器将从系统中完全删除、并且没有正在运行的服务或活动数据。</block>
+  <block id="d3c4a89052a32dd9783dd119f30d6d47" category="inline-link">vCenter插件5.3发行说明</block>
+  <block id="0c21440ced3ddae10d1eea32870fdf02" category="list-text"><block ref="ce90fd614158a5c7e0a42a5908fa1cd7" category="inline-link-rx"></block> _new_</block>
+  <block id="6bd87cf3d55c2ead3ab585e965bea4db" category="list-text"><block ref="6bd87cf3d55c2ead3ab585e965bea4db" category="inline-link-rx"></block></block>
+  <block id="bef71f962ff7a233f3e8439eeb8dac70" category="list-text">您正在升级到适用于vCenter Server 5.3、5.2、5.1或5.0的Element插件。</block>
+  <block id="976b368b923346c8ea4ccc71e72749f5" category="inline-link-macro">管理服务2.25.42通知(适用于VMware vCenter Server 5.3.9的NetApp Element插件)</block>
+  <block id="4d67cefe38dafa645f353279e4fbc37b" category="list-text"><block ref="4d67cefe38dafa645f353279e4fbc37b" category="inline-link-macro-rx"></block></block>
 </blocks>
